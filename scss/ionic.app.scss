@@ -16,7 +16,23 @@ $dark:                            #444 !default;
 */
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default; // Include all of Ionic
-@import "www/lib/ionic/scss/ionic"; // Typography
+@import "www/lib/ionic/scss/ionic";
+
+//Layout
+.bar-dark {background-color: #000 !important;}
+.bar {
+  height:75px !important;
+  .title {
+    height: 75px !important;
+  }
+}
+
+.has-header {
+    top: 75px !important;
+}
+
+
+// Typography
 @font-face {
   font-family: 'NeutraText-Book';
   src: url('../custom-fonts/NeutraText-Book.eot');
@@ -58,10 +74,10 @@ ion-content {
 // Icons
 svg {
   &#logo {
-    height: 24px;
-    margin-top: 12px;
+    height: 57px;
+    margin-top: 11px;
     .cls-1 {
-      fill: #fff;
+      fill: #87764f;
     }
   }
   &#flag {
@@ -171,6 +187,12 @@ ion-slide {
   flex-wrap: wrap;
   align-content: top;
   height: 40% !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   button {
     width: 33.333333333% !important;
     border-width: 0px!important;

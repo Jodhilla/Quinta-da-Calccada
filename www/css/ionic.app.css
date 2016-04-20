@@ -9731,6 +9731,17 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+.bar-dark {
+  background-color: #000 !important; }
+
+.bar {
+  height: 75px !important; }
+  .bar .title {
+    height: 75px !important; }
+
+.has-header {
+  top: 75px !important; }
+
 @font-face {
   font-family: 'NeutraText-Book';
   src: url("../custom-fonts/NeutraText-Book.eot");
@@ -9770,10 +9781,10 @@ ion-content {
   background: #231f20; }
 
 svg#logo {
-  height: 24px;
-  margin-top: 12px; }
+  height: 57px;
+  margin-top: 11px; }
   svg#logo .cls-1 {
-    fill: #fff; }
+    fill: #87764f; }
 
 svg#flag {
   height: 15px;
@@ -9851,7 +9862,13 @@ ion-slide {
   justify-content: space-around;
   flex-wrap: wrap;
   align-content: top;
-  height: 40% !important; }
+  height: 40% !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
   .homeButtons button {
     width: 33.333333333% !important;
     border-width: 0px !important;
