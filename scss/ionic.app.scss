@@ -14,21 +14,22 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+$bar-height: 75px !default;
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default; // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
 //Layout
-.bar-dark {background-color: #000 !important;}
+
 .bar {
-  height:75px !important;
   .title {
     height: 75px !important;
   }
 }
 
-.has-header {
-    top: 75px !important;
+.has-header{
+  top:75px;
 }
 
 
@@ -77,6 +78,9 @@ svg {
     height: 57px;
     margin-top: 11px;
     .cls-1 {
+      fill: #fff;
+    }
+    .cls-2 {
       fill: #87764f;
     }
   }
@@ -254,5 +258,28 @@ ion-slide {
     background-image: url('../img/vineyards-story/up-close-vines.jpg');
     background-position: center center;
     background-size: cover;
+  }
+}
+
+
+@media only screen and (min-device-width:767px) {
+  .homeButtons {
+    button {
+      p {
+        line-height: 28px;
+        font-size: 26px !important;
+      }
+      svg {
+        &#history,
+        &#pos,
+        &#press,
+        &#regions,
+        &#vineyards,
+        &#wines {
+          height: 50px;
+        }
+
+      }
+    }
   }
 }

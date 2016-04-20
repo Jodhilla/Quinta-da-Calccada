@@ -3509,25 +3509,25 @@ ion-infinite-scroll {
 
 /* If you change these, change platform.scss as well */
 .has-header {
-  top: 44px; }
+  top: 75px; }
 
 .no-header {
   top: 0; }
 
 .has-subheader {
-  top: 88px; }
+  top: 150px; }
 
 .has-tabs-top {
-  top: 93px; }
+  top: 124px; }
 
 .has-header.has-subheader.has-tabs-top {
-  top: 137px; }
+  top: 199px; }
 
 .has-footer {
-  bottom: 44px; }
+  bottom: 75px; }
 
 .has-subfooter {
-  bottom: 88px; }
+  bottom: 150px; }
 
 .has-tabs,
 .bar-footer.has-tabs {
@@ -3538,10 +3538,10 @@ ion-infinite-scroll {
     height: auto; }
 
 .bar-subfooter.has-tabs {
-  bottom: 93px; }
+  bottom: 124px; }
 
 .has-footer.has-tabs {
-  bottom: 93px; }
+  bottom: 124px; }
 
 .pane {
   -webkit-transform: translate3d(0, 0, 0);
@@ -3887,7 +3887,7 @@ a.subdued {
   box-sizing: border-box;
   padding: 5px;
   width: 100%;
-  height: 44px;
+  height: 75px;
   border-width: 0;
   border-style: solid;
   border-top: 1px solid transparent;
@@ -4009,13 +4009,13 @@ a.subdued {
     overflow: hidden;
     margin: 0 10px;
     min-width: 30px;
-    height: 43px;
+    height: 74px;
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 17px;
     font-weight: 500;
-    line-height: 44px; }
+    line-height: 75px; }
     .bar .title.title-left {
       text-align: left; }
     .bar .title.title-right {
@@ -4096,7 +4096,7 @@ a.subdued {
 
 .platform-android .bar .title {
   font-size: 19px;
-  line-height: 44px; }
+  line-height: 75px; }
 
 .bar-light .button {
   border-color: transparent;
@@ -4286,7 +4286,7 @@ a.subdued {
   border-top-width: 1px;
   border-bottom-width: 0;
   background-position: top;
-  height: 44px; }
+  height: 75px; }
   .bar-footer.item-input-inset {
     position: absolute; }
 
@@ -4294,14 +4294,14 @@ a.subdued {
   padding: 0; }
 
 .bar-subheader {
-  top: 44px;
+  top: 75px;
   display: block;
-  height: 44px; }
+  height: 75px; }
 
 .bar-subfooter {
-  bottom: 44px;
+  bottom: 75px;
   display: block;
-  height: 44px; }
+  height: 75px; }
 
 .nav-bar-block {
   position: absolute;
@@ -5038,7 +5038,7 @@ ion-tabs.tabs-color-active-dark .tab-item {
 /* If you change this, change platform.scss as well */
 .tabs-top > .tabs,
 .tabs.tabs-top {
-  top: 44px;
+  top: 75px;
   padding-top: 0;
   background-position: bottom;
   border-top-width: 0;
@@ -5307,21 +5307,21 @@ ion-tabs.tabs-color-active-dark .tab-item {
   .modal.ng-leave-active {
     bottom: 0; }
   .platform-ios.platform-cordova .modal-wrapper .modal .bar-header:not(.bar-subheader) {
-    height: 44px; }
+    height: 75px; }
     .platform-ios.platform-cordova .modal-wrapper .modal .bar-header:not(.bar-subheader) > * {
       margin-top: 0; }
   .platform-ios.platform-cordova .modal-wrapper .modal .tabs-top > .tabs,
   .platform-ios.platform-cordova .modal-wrapper .modal .tabs.tabs-top {
-    top: 44px; }
+    top: 75px; }
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header,
   .platform-ios.platform-cordova .modal-wrapper .modal .bar-subheader {
-    top: 44px; }
+    top: 75px; }
   .platform-ios.platform-cordova .modal-wrapper .modal .has-subheader {
-    top: 88px; }
+    top: 150px; }
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header.has-tabs-top {
-    top: 93px; }
+    top: 124px; }
   .platform-ios.platform-cordova .modal-wrapper .modal .has-header.has-subheader.has-tabs-top {
-    top: 137px; }
+    top: 199px; }
   .modal-backdrop-bg {
     -webkit-transition: opacity 300ms ease-in-out;
     transition: opacity 300ms ease-in-out;
@@ -9515,7 +9515,7 @@ a.button {
  * Platform specific tweaks
  */
 .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
-  height: 64px; }
+  height: 95px; }
   .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader).item-input-inset .item-input-wrapper {
     margin-top: 19px !important; }
   .platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > * {
@@ -9523,23 +9523,23 @@ a.button {
 
 .platform-ios.platform-cordova:not(.fullscreen) .tabs-top > .tabs,
 .platform-ios.platform-cordova:not(.fullscreen) .tabs.tabs-top {
-  top: 64px; }
+  top: 95px; }
 
 .platform-ios.platform-cordova:not(.fullscreen) .has-header,
 .platform-ios.platform-cordova:not(.fullscreen) .bar-subheader {
-  top: 64px; }
+  top: 95px; }
 
 .platform-ios.platform-cordova:not(.fullscreen) .has-subheader {
-  top: 108px; }
+  top: 170px; }
 
 .platform-ios.platform-cordova:not(.fullscreen) .has-header.has-tabs-top {
-  top: 113px; }
+  top: 144px; }
 
 .platform-ios.platform-cordova:not(.fullscreen) .has-header.has-subheader.has-tabs-top {
-  top: 157px; }
+  top: 219px; }
 
 .platform-ios.platform-cordova .popover .bar-header:not(.bar-subheader) {
-  height: 44px; }
+  height: 75px; }
   .platform-ios.platform-cordova .popover .bar-header:not(.bar-subheader).item-input-inset .item-input-wrapper {
     margin-top: -1px; }
   .platform-ios.platform-cordova .popover .bar-header:not(.bar-subheader) > * {
@@ -9547,10 +9547,10 @@ a.button {
 
 .platform-ios.platform-cordova .popover .has-header,
 .platform-ios.platform-cordova .popover .bar-subheader {
-  top: 44px; }
+  top: 75px; }
 
 .platform-ios.platform-cordova .popover .has-subheader {
-  top: 88px; }
+  top: 150px; }
 
 .platform-ios.platform-cordova.status-bar-hide {
   margin-bottom: 20px; }
@@ -9731,6 +9731,12 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+.bar .title {
+  height: 75px !important; }
+
+.has-header {
+  top: 75px; }
+
 @font-face {
   font-family: 'NeutraText-Book';
   src: url("../custom-fonts/NeutraText-Book.eot");
@@ -9770,10 +9776,12 @@ ion-content {
   background: #231f20; }
 
 svg#logo {
-  height: 24px;
-  margin-top: 12px; }
+  height: 57px;
+  margin-top: 11px; }
   svg#logo .cls-1 {
     fill: #fff; }
+  svg#logo .cls-2 {
+    fill: #87764f; }
 
 svg#flag {
   height: 15px;
@@ -9851,7 +9859,13 @@ ion-slide {
   justify-content: space-around;
   flex-wrap: wrap;
   align-content: top;
-  height: 40% !important; }
+  height: 40% !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
   .homeButtons button {
     width: 33.333333333% !important;
     border-width: 0px !important;
@@ -9904,3 +9918,10 @@ ion-slide {
     background-image: url("../img/vineyards-story/up-close-vines.jpg");
     background-position: center center;
     background-size: cover; }
+
+@media only screen and (min-device-width: 767px) {
+  .homeButtons button p {
+    line-height: 28px;
+    font-size: 26px !important; }
+  .homeButtons button svg#history, .homeButtons button svg#pos, .homeButtons button svg#press, .homeButtons button svg#regions, .homeButtons button svg#vineyards, .homeButtons button svg#wines {
+    height: 50px; } }

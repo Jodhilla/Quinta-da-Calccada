@@ -67,5 +67,7 @@
     <preference name="UIWebViewBounce" value="false" />
     <preference name="android-minSdkVersion" value="16" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenDelay" value="2000" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
 </widget>
