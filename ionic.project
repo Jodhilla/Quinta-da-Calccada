@@ -1,0 +1,12 @@
+{
+  "name": "Quinta da Calçada",
+  "app_id": "4ebe1928",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

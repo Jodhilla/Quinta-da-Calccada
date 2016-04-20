@@ -1,0 +1,236 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default; // Include all of Ionic
+@import "www/lib/ionic/scss/ionic"; // Typography
+@font-face {
+  font-family: 'NeutraText-Book';
+  src: url('../custom-fonts/NeutraText-Book.eot');
+  src: url('../custom-fonts/NeutraText-Book.eot?#iefix') format('embedded-opentype'), url('../custom-fonts/NeutraText-Book.woff2') format('woff2'), url('../custom-fonts/NeutraText-Book.woff') format('woff'), url('../custom-fonts/NeutraText-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+a,
+body,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "NeutraText-Book", Georgia, "Times New Roman", Serif !important;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  white-space: normal !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em;
+}
+p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  line-height: 25px;
+}
+body,
+ion-content {
+  background: #231f20;
+}
+// Icons
+svg {
+  &#logo {
+    height: 24px;
+    margin-top: 12px;
+    .cls-1 {
+      fill: #fff;
+    }
+  }
+  &#flag {
+    height: 15px;
+    margin: 10px 5px;
+    &.usa {
+      .cls-1 {
+        fill: none;
+      }
+      .cls-2 {
+        clip-path: url("#clip-path");
+      }
+      .cls-3 {
+        fill: #cb001c;
+      }
+      .cls-4 {
+        fill: #fff;
+      }
+      .cls-5 {
+        fill: #2a3560;
+      }
+    }
+    &.prt {
+      .cls-1 {
+        fill: none;
+      }
+      .cls-2 {
+        clip-path: url("#clip-path");
+      }
+      .cls-3 {
+        fill: #ea0020;
+      }
+      .cls-4 {
+        fill: #2a680b;
+      }
+      .cls-5 {
+        fill: #fcff2c;
+      }
+      .cls-6 {
+        fill: #fff;
+      }
+      .cls-7 {
+        fill: #1a0095;
+      }
+    }
+  }
+  &#history,
+  &#pos,
+  &#press,
+  &#regions,
+  &#vineyards,
+  &#wines {
+    height: 30px;
+    margin-top: 10px;
+    .cls-1 {
+      fill: #fff;
+    }
+  }
+}
+#menuLanguagePRT,
+#menuLanguageUSA {
+  p {
+    color: #000;
+  }
+  svg {
+    &#history,
+    &#pos,
+    &#press,
+    &#regions,
+    &#vineyards,
+    &#wines {
+      max-width: 20px;
+      max-height: 30px;
+      .cls-1 {
+        fill: #000;
+      }
+    }
+  }
+}
+// Sliders
+
+.slider-pager .slider-pager-page {
+    color: #fff;
+  }
+
+ion-slide {
+  text-align:center;
+  p{
+    color:#000;
+  }
+}
+
+.list.card {
+  margin:0 5px;
+  padding:10px;
+  background-color:		#FFFAF0;
+  img {
+    width:100%;
+  }
+}
+
+
+// Buttons
+.homeButtons {
+  display: -webkit-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: top;
+  height: 40% !important;
+  button {
+    width: 33.333333333% !important;
+    border-width: 0px!important;
+    border-style: none!important;
+    border-radius: 0px!important;
+    p {
+      line-height: 14px;
+      margin-bottom: 10px;
+      z-index: 10;
+      position: relative;
+    }
+    svg {
+      z-index: 10;
+      position: relative;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      clear: both;
+      display: block!important;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      opacity: 0.8;
+      background-image: -webkit-linear-gradient(#231f20,#231f20,#231f20);
+      background-image: -o-linear-gradient(#231f20,#231f20,#231f20);
+      background-image: -moz-linear-gradient(#231f20,#231f20,#231f20);
+      background-image: linear-gradient(#231f20,#231f20,#231f20);
+      z-index: 5;
+    }
+  }
+  #home-wine {
+    background-image: url('../img/homepage-story/enjoy-grapes.jpg');
+    background-position: center center;
+    background-size: cover;
+  }
+  #home-history {
+    background-image: url('../img/homepage-story/bw-vineyards.jpg');
+    background-position: center center;
+    background-size: cover;
+  }
+  #home-vineyard {
+    background-image: url('../img/homepage-story/terraced-vineyard.jpg');
+    background-position: center center;
+    background-size: cover;
+  }
+  #home-regions {
+    background-image: url('../img/region-story/vinho-verde-region-valley.jpg');
+    background-position: center center;
+    background-size: cover;
+  }
+  #home-pos {
+    background-image: url('../img/wines-story-img/hanging-grapes.jpg');
+    background-position: center center;
+    background-size: cover;
+  }
+  #home-pressKit {
+    background-image: url('../img/vineyards-story/up-close-vines.jpg');
+    background-position: center center;
+    background-size: cover;
+  }
+}
