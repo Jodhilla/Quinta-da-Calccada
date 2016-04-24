@@ -54,6 +54,9 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.ionicframework.starter"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.ionicframework.app2700026"
         }
     },
     "dependent_plugins": {}

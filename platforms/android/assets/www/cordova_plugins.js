@@ -30,6 +30,22 @@ module.exports = [
             "cordova.plugins.Keyboard"
         ],
         "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.js",
+        "id": "cordova-plugin-screen-orientation.screenorientation",
+        "pluginId": "cordova-plugin-screen-orientation",
+        "clobbers": [
+            "cordova.plugins.screenorientation"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-screen-orientation/www/screenorientation.android.js",
+        "id": "cordova-plugin-screen-orientation.screenorientation.android",
+        "pluginId": "cordova-plugin-screen-orientation",
+        "merges": [
+            "cordova.plugins.screenorientation"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -39,7 +55,8 @@ module.exports.metadata =
     "cordova-plugin-device": "1.1.1",
     "cordova-plugin-splashscreen": "3.2.1",
     "cordova-plugin-whitelist": "1.2.1",
-    "ionic-plugin-keyboard": "2.0.1"
+    "ionic-plugin-keyboard": "2.0.1",
+    "cordova-plugin-screen-orientation": "1.4.0"
 }
 // BOTTOM OF METADATA
 });

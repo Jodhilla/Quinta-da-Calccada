@@ -9731,11 +9731,83 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-.bar .title {
-  height: 75px !important; }
+@font-face {
+  font-family: "untitled-font-1";
+  src: url("fonts/untitled-font-1.eot");
+  src: url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"), url("fonts/untitled-font-1.woff") format("woff"), url("fonts/untitled-font-1.ttf") format("truetype"), url("fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-food:before {
+  content: "\61"; }
+
+.icon-fruit:before {
+  content: "\62"; }
+
+.icon-interface:before {
+  content: "\63"; }
+
+.icon-nature:before {
+  content: "\64"; }
+
+.icon-signs:before {
+  content: "\65"; }
+
+.icon-technology:before {
+  content: "\66"; }
+
+.icon-nature-1:before {
+  content: "\67"; }
 
 .has-header {
   top: 75px; }
+
+.bar-footer {
+  bottom: 0;
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  background-position: top;
+  height: 44px;
+  position: fixed; }
+
+.pull-left {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  bottom: 5px;
+  color: #87764f !important; }
+
+.pull-right {
+  right: 10px !important;
+  color: #87764f !important; }
+
+.bar .title {
+  font-size: 25px;
+  text-transform: uppercase; }
 
 @font-face {
   font-family: 'NeutraText-Book';
@@ -9767,9 +9839,9 @@ h4 {
   letter-spacing: 0.02em; }
 
 p {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 5px;
-  line-height: 25px; }
+  line-height: 24px; }
 
 body,
 ion-content {
@@ -9817,30 +9889,35 @@ svg#history, svg#pos, svg#press, svg#regions, svg#vineyards, svg#wines {
   svg#history .cls-1, svg#pos .cls-1, svg#press .cls-1, svg#regions .cls-1, svg#vineyards .cls-1, svg#wines .cls-1 {
     fill: #fff; }
 
-#menuLanguagePRT p,
-#menuLanguageUSA p {
-  color: #000; }
+#menuLanguagePRT,
+#menuLanguageUSA {
+  background-color: #87764f; }
+  #menuLanguagePRT .item-content,
+  #menuLanguageUSA .item-content {
+    background-color: #87764f;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+  #menuLanguagePRT .item,
+  #menuLanguageUSA .item {
+    background-color: #373020; }
+  #menuLanguagePRT p,
+  #menuLanguageUSA p {
+    color: #fff; }
+  #menuLanguagePRT span,
+  #menuLanguageUSA span {
+    color: #fff;
+    margin-left: 10px; }
+  #menuLanguagePRT i,
+  #menuLanguageUSA i {
+    color: #fff;
+    font-size: 20px; }
 
-#menuLanguagePRT svg#history, #menuLanguagePRT svg#pos, #menuLanguagePRT svg#press, #menuLanguagePRT svg#regions, #menuLanguagePRT svg#vineyards, #menuLanguagePRT svg#wines,
-#menuLanguageUSA svg#history,
-#menuLanguageUSA svg#pos,
-#menuLanguageUSA svg#press,
-#menuLanguageUSA svg#regions,
-#menuLanguageUSA svg#vineyards,
-#menuLanguageUSA svg#wines {
-  max-width: 20px;
-  max-height: 30px; }
-  #menuLanguagePRT svg#history .cls-1, #menuLanguagePRT svg#pos .cls-1, #menuLanguagePRT svg#press .cls-1, #menuLanguagePRT svg#regions .cls-1, #menuLanguagePRT svg#vineyards .cls-1, #menuLanguagePRT svg#wines .cls-1,
-  #menuLanguageUSA svg#history .cls-1,
-  #menuLanguageUSA svg#pos .cls-1,
-  #menuLanguageUSA svg#press .cls-1,
-  #menuLanguageUSA svg#regions .cls-1,
-  #menuLanguageUSA svg#vineyards .cls-1,
-  #menuLanguageUSA svg#wines .cls-1 {
-    fill: #000; }
-
-.slider-pager .slider-pager-page {
-  color: #fff; }
+.slider-pager {
+  top: 20px !important; }
+  .slider-pager .slider-pager-page {
+    color: #fff; }
 
 ion-slide {
   text-align: center; }
@@ -9853,6 +9930,24 @@ ion-slide {
   background-color: #FFFAF0; }
   .list.card img {
     width: 100%; }
+
+.fixed-left {
+  position: absolute;
+  left: 30px;
+  top: 20%;
+  font-size: 35px;
+  z-index: 10;
+  color: #fff !important;
+  text-shadow: 0 0 10px #000; }
+
+.fixed-right {
+  position: absolute;
+  right: 30px;
+  top: 20%;
+  font-size: 35px;
+  z-index: 10;
+  color: #fff !important;
+  text-shadow: 0 0 10px #000; }
 
 .homeButtons {
   display: -webkit-flex;
@@ -9875,10 +9970,14 @@ ion-slide {
       line-height: 14px;
       margin-bottom: 10px;
       z-index: 10;
+      font-size: 14px;
       position: relative; }
-    .homeButtons button svg {
+    .homeButtons button i {
+      margin-top: 10px;
+      color: #fff;
       z-index: 10;
-      position: relative; }
+      position: relative;
+      font-size: 30px; }
     .homeButtons button:before {
       content: "";
       position: absolute;

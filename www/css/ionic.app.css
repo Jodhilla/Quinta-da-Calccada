@@ -9799,14 +9799,20 @@ a.button {
   top: 5px;
   left: 10px;
   bottom: 5px;
-  color: #87764f !important; }
+  color: #fff !important; }
 
 .pull-right {
   right: 10px !important;
-  color: #87764f !important; }
+  color: #fff !important; }
+
+.divider {
+  height: 1px;
+  width: 60px;
+  background: #87764f;
+  margin: 10px auto; }
 
 .bar .title {
-  font-size: 25px;
+  font-size: 15px;
   text-transform: uppercase; }
 
 @font-face {
@@ -9839,13 +9845,19 @@ h4 {
   letter-spacing: 0.02em; }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 5px;
   line-height: 24px; }
 
 body,
 ion-content {
   background: #231f20; }
+
+.h3,
+h3 {
+  font-size: 16px;
+  text-align: center;
+  color: #87764f; }
 
 svg#logo {
   height: 57px;
@@ -9921,7 +9933,20 @@ svg#history, svg#pos, svg#press, svg#regions, svg#vineyards, svg#wines {
 
 ion-slide {
   text-align: center; }
+  ion-slide h2 {
+    font-size: 21px;
+    color: #87764f; }
+  ion-slide .h1,
+  ion-slide .h2,
+  ion-slide .h3,
+  ion-slide h1,
+  ion-slide h2,
+  ion-slide h3 {
+    margin-top: 15px;
+    margin-bottom: 0; }
   ion-slide p {
+    color: #fff; }
+  ion-slide .list.card p {
     color: #000; }
 
 .list.card {
@@ -9948,6 +9973,9 @@ ion-slide {
   z-index: 10;
   color: #fff !important;
   text-shadow: 0 0 10px #000; }
+
+.button {
+  line-height: 16px; }
 
 .homeButtons {
   display: -webkit-flex;

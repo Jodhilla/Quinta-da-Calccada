@@ -16,11 +16,11 @@ $dark:                            #444 !default;
 */
 $bar-height: 75px !default;
 $gold: #87764f;
+$white: #fff;
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default; // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 @import "www/css/icons";
-
 //Layout
 .has-header {
   top: 75px;
@@ -38,16 +38,22 @@ $ionicons-font-path: "../lib/ionic/fonts" !default; // Include all of Ionic
   top: 5px;
   left: 10px;
   bottom: 5px;
-  color: $gold !important;
+  color: $white !important;
 }
 .pull-right {
   right: 10px !important;
-  color: $gold !important;
+  color: $white !important;
+}
+.divider {
+  height: 1px;
+  width: 60px;
+  background: $gold;
+  margin: 10px auto;
 }
 // Typography
 .bar {
   .title {
-    font-size: 25px;
+    font-size: 15px;
     text-transform: uppercase;
   }
 }
@@ -69,7 +75,7 @@ h5,
 h6,
 p {
   font-family: "NeutraText-Book", Georgia, "Times New Roman", Serif !important;
-  color: #fff;
+  color: $white;
 }
 h1,
 h2,
@@ -81,7 +87,7 @@ h4 {
   letter-spacing: 0.02em;
 }
 p {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 5px;
   line-height: 24px;
 }
@@ -89,13 +95,19 @@ body,
 ion-content {
   background: #231f20;
 }
+.h3,
+h3 {
+  font-size: 16px;
+  text-align: center;
+  color: $gold;
+}
 // Icons
 svg {
   &#logo {
     height: 57px;
     margin-top: 11px;
     .cls-1 {
-      fill: #fff;
+      fill: $white;
     }
     .cls-2 {
       fill: $gold;
@@ -115,7 +127,7 @@ svg {
         fill: #cb001c;
       }
       .cls-4 {
-        fill: #fff;
+        fill: $white;
       }
       .cls-5 {
         fill: #2a3560;
@@ -138,7 +150,7 @@ svg {
         fill: #fcff2c;
       }
       .cls-6 {
-        fill: #fff;
+        fill: $white;
       }
       .cls-7 {
         fill: #1a0095;
@@ -154,7 +166,7 @@ svg {
     height: 30px;
     margin-top: 10px;
     .cls-1 {
-      fill: #fff;
+      fill: $white;
     }
   }
 }
@@ -172,14 +184,14 @@ svg {
     background-color: darken($gold, 25%);
   }
   p {
-    color: #fff;
+    color: $white;
   }
   span {
-    color: #fff;
+    color: $white;
     margin-left: 10px;
   }
   i {
-    color:#fff;
+    color: $white;
     font-size: 20px;
   }
 }
@@ -187,13 +199,31 @@ svg {
 .slider-pager {
   top: 20px !important;
   .slider-pager-page {
-    color: #fff;
+    color: $white;
   }
 }
 ion-slide {
   text-align: center;
+  h2 {
+    font-size: 21px;
+    color: $gold;
+  }
+  .h1,
+  .h2,
+  .h3,
+  h1,
+  h2,
+  h3 {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
   p {
-    color: #000;
+    color: $white;
+  }
+  .list.card {
+    p {
+      color: #000;
+    }
   }
 }
 .list.card {
@@ -210,7 +240,7 @@ ion-slide {
   top: 20%;
   font-size: 35px;
   z-index: 10;
-  color: #fff !important;
+  color: $white !important;
   text-shadow: 0 0 10px #000;
 }
 .fixed-right {
@@ -219,10 +249,13 @@ ion-slide {
   top: 20%;
   font-size: 35px;
   z-index: 10;
-  color: #fff !important;
+  color: $white !important;
   text-shadow: 0 0 10px #000;
 }
 // Buttons
+.button {
+  line-height: 16px;
+}
 .homeButtons {
   display: -webkit-flex;
   justify-content: space-around;
@@ -249,7 +282,7 @@ ion-slide {
     }
     i {
       margin-top: 10px;
-      color: #fff;
+      color: $white;
       z-index: 10;
       position: relative;
       font-size: 30px;
