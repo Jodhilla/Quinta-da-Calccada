@@ -9731,11 +9731,16 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-.bar .title {
-  height: 75px !important; }
-
 .has-header {
   top: 75px; }
+
+.bar-footer {
+  bottom: 0;
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  background-position: top;
+  height: 44px;
+  position: fixed; }
 
 @font-face {
   font-family: 'NeutraText-Book';
@@ -9767,9 +9772,9 @@ h4 {
   letter-spacing: 0.02em; }
 
 p {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 5px;
-  line-height: 25px; }
+  line-height: 24px; }
 
 body,
 ion-content {
@@ -9839,8 +9844,10 @@ svg#history, svg#pos, svg#press, svg#regions, svg#vineyards, svg#wines {
   #menuLanguageUSA svg#wines .cls-1 {
     fill: #000; }
 
-.slider-pager .slider-pager-page {
-  color: #fff; }
+.slider-pager {
+  top: 20px !important; }
+  .slider-pager .slider-pager-page {
+    color: #fff; }
 
 ion-slide {
   text-align: center; }
@@ -9853,6 +9860,24 @@ ion-slide {
   background-color: #FFFAF0; }
   .list.card img {
     width: 100%; }
+
+.fixed-left {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  font-size: 35px;
+  z-index: 10;
+  color: #fff !important;
+  text-shadow: 0px 0px 10px #000; }
+
+.fixed-right {
+  position: absolute;
+  right: 0;
+  top: 25%;
+  font-size: 35px;
+  z-index: 10;
+  color: #fff !important;
+  text-shadow: 0px 0px 10px #000; }
 
 .homeButtons {
   display: -webkit-flex;
@@ -9875,6 +9900,7 @@ ion-slide {
       line-height: 14px;
       margin-bottom: 10px;
       z-index: 10;
+      font-size: 14px;
       position: relative; }
     .homeButtons button svg {
       z-index: 10;

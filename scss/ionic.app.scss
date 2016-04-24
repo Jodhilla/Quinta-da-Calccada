@@ -15,25 +15,42 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 $bar-height: 75px !default;
-
+$gold: #87764f;
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default; // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
+@import "www/css/icons";
 
 //Layout
-
+.has-header {
+  top: 75px;
+}
+.bar-footer {
+  bottom: 0;
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  background-position: top;
+  height: 44px;
+  position: fixed;
+}
+.pull-left {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  bottom: 5px;
+  color: $gold !important;
+}
+.pull-right {
+  right: 10px !important;
+  color: $gold !important;
+}
+// Typography
 .bar {
   .title {
-    height: 75px !important;
+    font-size: 25px;
+    text-transform: uppercase;
   }
 }
-
-.has-header{
-  top:75px;
-}
-
-
-// Typography
 @font-face {
   font-family: 'NeutraText-Book';
   src: url('../custom-fonts/NeutraText-Book.eot');
@@ -64,9 +81,9 @@ h4 {
   letter-spacing: 0.02em;
 }
 p {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 5px;
-  line-height: 25px;
+  line-height: 24px;
 }
 body,
 ion-content {
@@ -81,7 +98,7 @@ svg {
       fill: #fff;
     }
     .cls-2 {
-      fill: #87764f;
+      fill: $gold;
     }
   }
   &#flag {
@@ -143,47 +160,68 @@ svg {
 }
 #menuLanguagePRT,
 #menuLanguageUSA {
-  p {
-    color: #000;
+  background-color: $gold;
+  .item-content {
+    background-color: $gold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
   }
-  svg {
-    &#history,
-    &#pos,
-    &#press,
-    &#regions,
-    &#vineyards,
-    &#wines {
-      max-width: 20px;
-      max-height: 30px;
-      .cls-1 {
-        fill: #000;
-      }
-    }
+  .item {
+    background-color: darken($gold, 25%);
+  }
+  p {
+    color: #fff;
+  }
+  span {
+    color: #fff;
+    margin-left: 10px;
+  }
+  i {
+    color:#fff;
+    font-size: 20px;
   }
 }
 // Sliders
-
-.slider-pager .slider-pager-page {
+.slider-pager {
+  top: 20px !important;
+  .slider-pager-page {
     color: #fff;
   }
-
+}
 ion-slide {
-  text-align:center;
-  p{
-    color:#000;
+  text-align: center;
+  p {
+    color: #000;
   }
 }
-
 .list.card {
-  margin:0 5px;
-  padding:10px;
-  background-color:		#FFFAF0;
+  margin: 0 5px;
+  padding: 10px;
+  background-color: #FFFAF0;
   img {
-    width:100%;
+    width: 100%;
   }
 }
-
-
+.fixed-left {
+  position: absolute;
+  left: 30px;
+  top: 20%;
+  font-size: 35px;
+  z-index: 10;
+  color: #fff !important;
+  text-shadow: 0 0 10px #000;
+}
+.fixed-right {
+  position: absolute;
+  right: 30px;
+  top: 20%;
+  font-size: 35px;
+  z-index: 10;
+  color: #fff !important;
+  text-shadow: 0 0 10px #000;
+}
 // Buttons
 .homeButtons {
   display: -webkit-flex;
@@ -206,11 +244,15 @@ ion-slide {
       line-height: 14px;
       margin-bottom: 10px;
       z-index: 10;
+      font-size: 14px;
       position: relative;
     }
-    svg {
+    i {
+      margin-top: 10px;
+      color: #fff;
       z-index: 10;
       position: relative;
+      font-size: 30px;
     }
     &:before {
       content: "";
@@ -260,8 +302,6 @@ ion-slide {
     background-size: cover;
   }
 }
-
-
 @media only screen and (min-device-width:767px) {
   .homeButtons {
     button {
@@ -278,7 +318,6 @@ ion-slide {
         &#wines {
           height: 50px;
         }
-
       }
     }
   }

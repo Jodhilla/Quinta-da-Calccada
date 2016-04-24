@@ -1,17 +1,15 @@
 <ion-view title="History" id="page4" style="background-color:#000000;">
-  
+
   <ion-content padding="true" class="has-header">
-    <ion-slide-box does-continue="true" show-pager='true' slide-interval="3000" auto-play="true" on-slide-changed="slideChanged(index)">
+    <ion-slide-box does-continue="false" show-pager='true' slide-interval="5000" auto-play="false" on-slide-changed="slideChanged(index)">
       <ion-slide>
         <div class="list card">
 
-          <div class="item item-body">
-            <img class="full-image" src="img/history-story/casa-painting.jpg">
-            <p>
-              Nowadays known as Quinta da Calçada, this painting identifies the former palatial residence from Redondo Counts in Portugal, during the sixteenth century. The Calçada Estate had a tumultuous history throughout the years, playing a relevant part in Portugal
-              during the French invasion, when it was almost destroyed by the fire.
-            </p>
-          </div>
+          <img class="full-image" src="img/history-story/casa-painting.jpg">
+          <p>
+            Nowadays known as Quinta da Calçada, this painting identifies the former palatial residence from Redondo Counts in Portugal, during the sixteenth century. The Calçada Estate had a tumultuous history throughout the years, playing a relevant part in Portugal
+            during the French invasion, when it was almost destroyed by the fire.
+          </p>
 
         </div>
       </ion-slide>
@@ -20,13 +18,11 @@
 
         <div class="list card">
 
-          <div class="item item-body">
-            <img class="full-image" src="img/history-story/portal.jpg">
-            <p>
-              Located in the central region of Vinho Verde, and the gateway to the Douro Valley. It’s location in the region during eighteenth and nineteenth century served as a cultural scene for politicians, artists and intellectuals. The grand Estate of Quinta da
-              Calçada is pictured here in an artist rendering. The painting accurately depicts the winery, living residence, vineyards, turrets, and regional importance.
-            </p>
-          </div>
+          <img class="full-image" src="img/history-story/portal.jpg">
+          <p>
+            Located in the central region of Vinho Verde, and the gateway to the Douro Valley. It’s location in the region during eighteenth and nineteenth century served as a cultural scene for politicians, artists and intellectuals. The grand Estate of Quinta da
+            Calçada is pictured here in an artist rendering. The painting accurately depicts the winery, living residence, vineyards, turrets, and regional importance.
+          </p>
 
         </div>
       </ion-slide>
@@ -34,13 +30,11 @@
       <ion-slide>
         <div class="list card">
 
-          <div class="item item-body">
-            <img class="full-image" src="img/homepage-story/bw-vineyards.jpg">
-            <p>
-              Quinta da Calçada wine cellars were founded in 1917 in the region of Amarante. The vineyards were producing elegant wines as early as 1927. Fifty ares of the original vineyard is certified as the oldest vineyard in the region of Vinho Verde. Each of these
-              areas have a unique and distinctive personality.
-            </p>
-          </div>
+          <img class="full-image" src="img/homepage-story/bw-vineyards.jpg">
+          <p>
+            Quinta da Calçada wine cellars were founded in 1917 in the region of Amarante. The vineyards were producing elegant wines as early as 1927. Fifty ares of the original vineyard is certified as the oldest vineyard in the region of Vinho Verde. Each of these
+            areas have a unique and distinctive personality.
+          </p>
 
         </div>
       </ion-slide>
@@ -48,19 +42,21 @@
       <ion-slide>
         <div class="list card">
 
-          <div class="item item-body">
-            <img class="full-image" src="img/history-story/Barrel-Room-1.jpg">
-            <p>
-              The twentieth century at Quinta da Calçada cellars brought about significant economic development to the region of Amarante and Vinho Verde. After returning from viticultural and enological studies in France, Dr. Lago Cerqueira built the winery and the
-              region’s reputation as a leader in quality wine production.
-            </p>
-            <p>
-              Lago Cerqueira was a leader in the revolution of the region that became demarcated in 1927, bringing it to the success we know nowadays.
-            </p>
-          </div>
+          <img class="full-image" src="img/history-story/Barrel-Room-1.jpg">
+          <p>
+            The twentieth century at Quinta da Calçada cellars brought about significant economic development to the region of Amarante and Vinho Verde. After returning from viticultural and enological studies in France, Dr. Lago Cerqueira built the winery and the
+            region’s reputation as a leader in quality wine production.
+          </p>
+          <p>
+            Lago Cerqueira was a leader in the revolution of the region that became demarcated in 1927, bringing it to the success we know nowadays.
+          </p>
 
         </div>
       </ion-slide>
     </ion-slide-box>
   </ion-content>
+  <div class="bar bar-dark bar-footer padding">
+    <button class="button-clear button button-clear pull-left" ng-click="previous()" ng-show="slideIndex > 0">PREVIOUS</button>
+    <button class="button-clear button button-clear pull-right" ng-click="next()" ng-show="slideIndex != 3">NEXT</button>
+  </div>
 </ion-view>

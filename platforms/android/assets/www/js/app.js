@@ -22,6 +22,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   });
 })
 
+
+
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
@@ -32,42 +34,237 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
+  .state('app.home', {
+    url: '/home',
     views: {
-      'menuContent': {
-        templateUrl: 'templates/search.html'
+      'appContent': {
+        templateUrl: 'templates/home.html'
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/usa.html'
       }
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/browse.html'
-        }
-      }
-    })
-    .state('app.playlists', {
-      url: '/playlists',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
-        }
-      }
-    })
-
-  .state('app.single', {
-    url: '/playlists/:playlistId',
+  .state('app.wines', {
+    url: '/wines',
     views: {
-      'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
+      'appContent': {
+        templateUrl: 'templates/wines.html',
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/usa.html'
+      }
+    }
+  })
+
+  .state('app.whiteVaretals', {
+    url: '/whiteVaretals',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/whiteVaretals.html',
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/usa.html'
+      }
+    }
+  })
+
+  .state('app.redVaretals', {
+    url: '/redVaretals',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/redVaretals.html',
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/usa.html'
+      }
+    }
+  })
+
+  .state('app.redVaretalsRos', {
+    url: '/redVaretalsRos',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/redVaretalsRos.html',
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/usa.html'
+      }
+    }
+  })
+
+  .state('app.lago', {
+    url: '/lago',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/lago.html',
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/usa.html'
+      }
+    }
+  })
+
+  .state('app.quinta', {
+    url: '/quinta',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/quinta.html',
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/quinta.html'
+      }
+    }
+  })
+
+  .state('app.portal', {
+    url: '/portal',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/portal.html',
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/usa.html'
+      }
+    }
+  })
+
+  .state('app.history', {
+    url: '/history',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/history.html',
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/usa.html'
+      }
+    }
+  })
+
+  .state('app.pos', {
+    url: '/pos',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/pos.html',
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/usa.html'
+      }
+    }
+  })
+
+  .state('app.regions', {
+    url: '/regions',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/regions.html',
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/usa.html'
+      }
+    }
+  })
+
+  .state('app.vineyards', {
+    url: '/vineyards',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/vineyards.html',
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/usa.html'
+      }
+    }
+  })
+
+  .state('app.ourVineyards', {
+    url: '/ourVineyards',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/ourVineyards.html',
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/usa.html'
+      }
+    }
+  })
+
+  // Portuguese Pages
+
+
+  .state('app.casa', {
+    url: '/casa',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/casa.html'
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/prt.html'
+      }
+    }
+  })
+
+  .state('app.histRia', {
+    url: '/histRia',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/histRia.html'
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/prt.html'
+      }
+    }
+  })
+
+  .state('app.vinhos', {
+    url: '/vinhos',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/vinhos.html'
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/prt.html'
+      }
+    }
+  })
+
+  .state('app.regiEs', {
+    url: '/regiEs',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/regiEs.html'
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/prt.html'
+      }
+    }
+  })
+
+  .state('app.vineyardsPortuguese', {
+    url: '/vineyardsPortuguese',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/vineyardsPortuguese.html'
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/prt.html'
+      }
+    }
+  })
+
+  .state('app.piontDeVenda', {
+    url: '/piontDeVenda',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/piontDeVenda.html'
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/prt.html'
       }
     }
   });
+
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/home');
 });
