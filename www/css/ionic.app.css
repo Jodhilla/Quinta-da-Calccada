@@ -9786,6 +9786,9 @@ a.button {
 .has-header {
   top: 75px; }
 
+button.button.button-icon.button-clear.ion-navicon, button.button.back-button.buttons.button-clear.header-item {
+  padding-top: 15px; }
+
 .bar-footer {
   bottom: 0;
   border-top-width: 1px;
@@ -9810,6 +9813,9 @@ a.button {
   width: 60px;
   background: #87764f;
   margin: 10px auto; }
+
+.has-footer {
+  bottom: 42px; }
 
 .bar .title {
   font-size: 15px;
@@ -9956,7 +9962,7 @@ ion-slide {
   .list.card img {
     width: 100%; }
 
-.fixed-left {
+#home .fixed-left {
   position: absolute;
   left: 30px;
   top: 20%;
@@ -9965,7 +9971,7 @@ ion-slide {
   color: #fff !important;
   text-shadow: 0 0 10px #000; }
 
-.fixed-right {
+#home .fixed-right {
   position: absolute;
   right: 30px;
   top: 20%;
@@ -9974,10 +9980,44 @@ ion-slide {
   color: #fff !important;
   text-shadow: 0 0 10px #000; }
 
+.grapes .list.card img {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 25px; }
+
+.grapes .slider-pager {
+  top: 49px !important; }
+  .grapes .slider-pager .slider-pager-page {
+    color: #87764f; }
+
+.wineSlides .slider-pager {
+  top: 5px !important; }
+
+.wineSlides p {
+  padding-top: 5px; }
+
+.buttonContainer {
+  height: 25px;
+  z-index: 10;
+  position: relative; }
+  .buttonContainer.black {
+    background-color: #000; }
+  .buttonContainer.white {
+    background-color: #fff; }
+    .buttonContainer.white .float-right, .buttonContainer.white .float-left {
+      color: #87764f !important; }
+  .buttonContainer .float-left {
+    float: left;
+    padding-top: 2px; }
+  .buttonContainer .float-right {
+    float: right;
+    padding-top: 2px; }
+
 .button {
   line-height: 16px; }
 
-.homeButtons {
+.homeButtons,
+.wineButtons {
   display: -webkit-flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -9989,24 +10029,29 @@ ion-slide {
   width: 100%;
   padding: 0;
   margin: 0; }
-  .homeButtons button {
+  .homeButtons button,
+  .wineButtons button {
     width: 33.333333333% !important;
     border-width: 0px !important;
     border-style: none !important;
     border-radius: 0px !important; }
-    .homeButtons button p {
+    .homeButtons button p,
+    .wineButtons button p {
       line-height: 14px;
       margin-bottom: 10px;
       z-index: 10;
       font-size: 14px;
-      position: relative; }
-    .homeButtons button i {
+      position: relative;
+      padding-top: 5px; }
+    .homeButtons button i,
+    .wineButtons button i {
       margin-top: 10px;
       color: #fff;
       z-index: 10;
       position: relative;
       font-size: 30px; }
-    .homeButtons button:before {
+    .homeButtons button:before,
+    .wineButtons button:before {
       content: "";
       position: absolute;
       clear: both;
@@ -10021,30 +10066,77 @@ ion-slide {
       background-image: -moz-linear-gradient(#231f20, #231f20, #231f20);
       background-image: linear-gradient(#231f20, #231f20, #231f20);
       z-index: 5; }
-  .homeButtons #home-wine {
+  .homeButtons #home-wine,
+  .wineButtons #home-wine {
     background-image: url("../img/homepage-story/enjoy-grapes.jpg");
     background-position: center center;
     background-size: cover; }
-  .homeButtons #home-history {
+  .homeButtons #home-history,
+  .wineButtons #home-history {
     background-image: url("../img/homepage-story/bw-vineyards.jpg");
     background-position: center center;
     background-size: cover; }
-  .homeButtons #home-vineyard {
+  .homeButtons #home-vineyard,
+  .wineButtons #home-vineyard {
     background-image: url("../img/homepage-story/terraced-vineyard.jpg");
     background-position: center center;
     background-size: cover; }
-  .homeButtons #home-regions {
+  .homeButtons #home-regions,
+  .wineButtons #home-regions {
     background-image: url("../img/region-story/vinho-verde-region-valley.jpg");
     background-position: center center;
     background-size: cover; }
-  .homeButtons #home-pos {
+  .homeButtons #home-pos,
+  .wineButtons #home-pos {
     background-image: url("../img/wines-story-img/hanging-grapes.jpg");
     background-position: center center;
     background-size: cover; }
-  .homeButtons #home-pressKit {
+  .homeButtons #home-pressKit,
+  .wineButtons #home-pressKit {
     background-image: url("../img/vineyards-story/up-close-vines.jpg");
     background-position: center center;
     background-size: cover; }
+
+.wineCard {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 270px;
+  background-blend-mode: multiply; }
+  .wineCard h3, .wineCard p, .wineCard .divider {
+    z-index: 10;
+    position: relative; }
+  .wineCard p {
+    padding-top: 250px; }
+
+#alvarinho {
+  background-image: url("../img/wines-story-img/alvarihno-grape.jpg"); }
+
+#loureiro {
+  background-image: url("../img/wines-story-img/loureiro-grape.jpg"); }
+
+#arinto {
+  background-image: url("../img/wines-story-img/arinto-grape.jpg"); }
+
+#azal {
+  background-image: url("../img/wines-story-img/azal-grape.jpg"); }
+
+#trajadura {
+  background-image: url("../img/wines-story-img/trajadura-grape.jpg"); }
+
+#vinhao {
+  background-image: url("../img/wines-story-img/vinhao-grape.jpg"); }
+
+#nacional {
+  background-image: url("../img/wines-story-img/touriga-nacional-grape.jpg"); }
+
+#franca {
+  background-image: url("../img/wines-story-img/touriga-franca-grape.jpg"); }
+
+#roriz {
+  background-image: url("../img/wines-story-img/tinta-roriz-grape.jpg"); }
+
+#barroca {
+  background-image: url("../img/wines-story-img/tinta-barroca-grape.jpg"); }
 
 @media only screen and (min-device-width: 767px) {
   .homeButtons button p {

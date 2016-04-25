@@ -1,44 +1,56 @@
 <ion-view title="Red Varetals" id="page9">
   <ion-content padding="false" class="has-header">
+    <ion-slide-box does-continue="false" show-pager='true' slide-interval="3000" auto-play="false" on-slide-changed="slideChanged(index)" class="grapes">
+      <ion-slide>
+        <div class="list card wineCard" id="nacional">
+          <h3>Touriga Nacional</h3>
+          <div class="divider"></div>
 
-    <div class="list card">
-      <div class="item item-divider">Touriga Nacional</div>
-      <div class="item item-body">
-        <img src="img/wines-story-img/touriga-nacional-grape.jpg">
-        <button>Sound File</button>
-        <p>Touriga Nacional is of low production: it has many, but small bunches. The berries have a high concentration of sugar, colour and aromas. Wines produced or blended with this grape variety are very balanced, alcoholic and have a good ageing potential.</p>
-      </div>
-    </div>
 
-    <div class="list card">
-      <div class="item item-divider">Touriga Franca</div>
-      <div class="item item-body">
-        <img src="img/wines-story-img/touriga-franca-grape.jpg">
-        <button>Sound File</button>
-        <p>Touriga Franca has regular productions throughout the year and is very resistant to diseases. Its bunches are medium-sized or big with round, medium-sized berries. Wines produced by this grape variety have a deep colour and are very fruity. </p>
-      </div>
-    </div>
+          <p>Touriga Nacional is of low production: it has many, but small bunches. The berries have a high concentration of sugar, colour and aromas. Wines produced or blended with this grape variety are very balanced, alcoholic and have a good ageing potential.</p>
+          <button class="button button-dark"><i class="ion-volume-high"></i>&emsp;Sound File</button>
 
-    <div class="list card">
-      <div class="item item-divider">Tinta Roriz (Tempranillo)</div>
-      <div class="item item-body">
-        <img src="img/wines-story-img/tinta-roriz-grape.jpg">
-        <button>Sound File</button>
-        <p>In order for the Aragonez qualities to be excellent, its production has to be controlled. Ideal are sandy and carbonate-clayey soils in hot and dry climates, to make the production lower and the berries more concentrated. This grape variety produces
-          wines with high alcohol content and low acidity, ideal for ageing, as they are very resistant to rust.</p>
-      </div>
-    </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="list card wineCard" id="franca">
+          <h3>Touriga Nacional</h3>
+          <div class="divider"></div>
 
-    <div class="list card">
-      <div class="item item-divider">Tinta Barroca</div>
-      <div class="item item-body">
-        <img src="img/wines-story-img/tinta-barroca-grape.jpg">
-        <button>Sound File</button>
-        <p>You will rarely meet it as a single variety, but it forms part of most red Douro blends, contributing dark colour without too much tannin, thanks to its dark but thin skins, along with plummy, cherry fruit. </p>
-      </div>
-    </div>
+
+          <p>Touriga Nacional is of low production: it has many, but small bunches. The berries have a high concentration of sugar, colour and aromas. Wines produced or blended with this grape variety are very balanced, alcoholic and have a good ageing potential.</p>
+          <button class="button button-dark"><i class="ion-volume-high"></i>&emsp;Sound File</button>
+
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="list card wineCard" id="roriz">
+          <h3>Tinta Roriz (Tempranillo)</h3>
+          <div class="divider"></div>
+
+
+          <p>In order for the Aragonez qualities to be excellent, its production has to be controlled. Ideal are sandy and carbonate-clayey soils in hot and dry climates, to make the production lower and the berries more concentrated. This grape variety
+            produces wines with high alcohol content and low acidity, ideal for ageing, as they are very resistant to rust.</p>
+          <button class="button button-dark"><i class="ion-volume-high"></i>&emsp;Sound File</button>
+
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="list card wineCard" id="barroca">
+          <h3>Tinta Roriz (Tempranillo)</h3>
+          <div class="divider"></div>
+
+
+          <p>You will rarely meet it as a single variety, but it forms part of most red Douro blends, contributing dark colour without too much tannin, thanks to its dark but thin skins, along with plummy, cherry fruit. </p>
+          <button class="button button-dark"><i class="ion-volume-high"></i>&emsp;Sound File</button>
+
+        </div>
+      </ion-slide>
+    </ion-slide-box>
 
   </ion-content>
+  <ion-footer-bar  class="bar bar-dark bar-footer padding">
+    <button class="button-clear button button-clear pull-left" ng-click="previous()" ng-show="slideIndex > 0"><i class="ion-chevron-left"></i>&emsp;PREVIOUS</button>
+    <button class="button-clear button button-clear pull-right" ng-click="next()" ng-show="slideIndex != 3">NEXT&emsp;<i class="ion-chevron-right"></i></button>
+  </ion-footer-bar >
 </ion-view>
-
-<div class="list">

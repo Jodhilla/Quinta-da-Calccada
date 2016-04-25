@@ -16,15 +16,21 @@ $dark:                            #444 !default;
 */
 $bar-height: 75px !default;
 $gold: #87764f;
-$white: #fff;
-// The path for our ionicons font files, relative to the built CSS in www/css
+$white: #fff; // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default; // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 @import "www/css/icons";
-//Layout
+
+// ---------------------------- Layout ---------------------------------//
 .has-header {
   top: 75px;
 }
+
+button.button.button-icon.button-clear.ion-navicon, button.button.back-button.buttons.button-clear.header-item{
+  padding-top:15px;
+}
+
+
 .bar-footer {
   bottom: 0;
   border-top-width: 1px;
@@ -50,7 +56,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default; // Include all of Ionic
   background: $gold;
   margin: 10px auto;
 }
-// Typography
+.has-footer {
+  bottom: 42px;
+}
+// ---------------------------- Typography ---------------------------------//
 .bar {
   .title {
     font-size: 15px;
@@ -101,7 +110,7 @@ h3 {
   text-align: center;
   color: $gold;
 }
-// Icons
+// ---------------------------- Icons ---------------------------------//
 svg {
   &#logo {
     height: 57px;
@@ -195,7 +204,7 @@ svg {
     font-size: 20px;
   }
 }
-// Sliders
+// ---------------------------- Sliders ---------------------------------//
 .slider-pager {
   top: 20px !important;
   .slider-pager-page {
@@ -234,29 +243,78 @@ ion-slide {
     width: 100%;
   }
 }
-.fixed-left {
-  position: absolute;
-  left: 30px;
-  top: 20%;
-  font-size: 35px;
-  z-index: 10;
-  color: $white !important;
-  text-shadow: 0 0 10px #000;
+#home {
+  .fixed-left {
+    position: absolute;
+    left: 30px;
+    top: 20%;
+    font-size: 35px;
+    z-index: 10;
+    color: $white !important;
+    text-shadow: 0 0 10px #000;
+  }
+  .fixed-right {
+    position: absolute;
+    right: 30px;
+    top: 20%;
+    font-size: 35px;
+    z-index: 10;
+    color: $white !important;
+    text-shadow: 0 0 10px #000;
+  }
 }
-.fixed-right {
-  position: absolute;
-  right: 30px;
-  top: 20%;
-  font-size: 35px;
-  z-index: 10;
-  color: $white !important;
-  text-shadow: 0 0 10px #000;
+
+
+
+.grapes .list.card img {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 25px;
 }
-// Buttons
+.grapes {
+  .slider-pager {
+    top: 49px !important;
+    .slider-pager-page {
+      color: $gold;
+    }
+  }
+}
+.wineSlides {
+  .slider-pager {
+    top: 5px !important;
+  }
+  p {
+    padding-top: 5px;
+  }
+}
+.buttonContainer{
+  height: 25px;
+  z-index: 10;
+  position: relative;
+  &.black{
+    background-color: #000;
+  }
+  &.white {
+    background-color: $white;
+    .float-right, .float-left {
+    color: $gold !important;
+  }
+  }
+  .float-left {
+    float:left;
+    padding-top:2px;
+  }
+  .float-right {
+    float:right;
+    padding-top:2px;
+  }
+}
+// ---------------------------- Buttons ---------------------------------//
 .button {
   line-height: 16px;
 }
-.homeButtons {
+.homeButtons,
+.wineButtons {
   display: -webkit-flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -279,6 +337,7 @@ ion-slide {
       z-index: 10;
       font-size: 14px;
       position: relative;
+      padding-top: 5px;
     }
     i {
       margin-top: 10px;
@@ -335,6 +394,63 @@ ion-slide {
     background-size: cover;
   }
 }
+
+// ---------------------------- Wine Cards ---------------------------------//
+.wineCard {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 270px;
+  background-blend-mode: multiply;
+h3, p, .divider {
+    z-index: 10;
+    position: relative;
+}
+p {
+  padding-top:250px
+}
+}
+
+//white
+#alvarinho {
+  background-image: url('../img/wines-story-img/alvarihno-grape.jpg');
+}
+
+#loureiro {
+  background-image: url('../img/wines-story-img/loureiro-grape.jpg');
+}
+#arinto {
+  background-image: url('../img/wines-story-img/arinto-grape.jpg');
+}
+
+#azal {
+  background-image: url('../img/wines-story-img/azal-grape.jpg');
+}
+#trajadura {
+  background-image: url('../img/wines-story-img/trajadura-grape.jpg');
+}
+
+//Rose
+
+#vinhao {
+  background-image: url('../img/wines-story-img/vinhao-grape.jpg');
+}
+
+
+//Red
+#nacional {
+  background-image: url('../img/wines-story-img/touriga-nacional-grape.jpg');
+}
+#franca {
+  background-image: url('../img/wines-story-img/touriga-franca-grape.jpg');
+}
+#roriz {
+  background-image: url('../img/wines-story-img/tinta-roriz-grape.jpg');
+}
+#barroca {
+  background-image: url('../img/wines-story-img/tinta-barroca-grape.jpg');
+}
+
+// ---------------------------- Media Querys ---------------------------------//
 @media only screen and (min-device-width:767px) {
   .homeButtons {
     button {

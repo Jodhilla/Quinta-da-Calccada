@@ -39,9 +39,6 @@
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.ionicframework.app2685009"
         },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.app2685009"
-        },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "com.ionicframework.app2685009"
         },
