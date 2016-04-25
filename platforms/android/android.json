@@ -23,6 +23,10 @@
                         {
                             "xml": "<feature name=\"YoikScreenOrientation\"><param name=\"android-package\" value=\"net.yoik.cordova.plugins.screenorientation.YoikScreenOrientation\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -48,6 +52,9 @@
             "PACKAGE_NAME": "com.ionicframework.app2685009"
         },
         "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.ionicframework.app2700026"
+        },
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.ionicframework.app2700026"
         }
     },
@@ -100,6 +107,7 @@
         "cordova-plugin-device": "1.1.1",
         "cordova-plugin-splashscreen": "3.2.1",
         "ionic-plugin-keyboard": "2.0.1",
-        "cordova-plugin-screen-orientation": "1.4.0"
+        "cordova-plugin-screen-orientation": "1.4.0",
+        "cordova-plugin-whitelist": "1.2.3-dev"
     }
 }

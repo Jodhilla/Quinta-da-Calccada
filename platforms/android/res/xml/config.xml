@@ -15,6 +15,15 @@
     <feature name="YoikScreenOrientation">
         <param name="android-package" value="net.yoik.cordova.plugins.screenorientation.YoikScreenOrientation" />
     </feature>
+    <description>
+    Quinta da Calcada Winery Vinho Verde Portugal
+  </description>
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
     <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
     <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
     <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
@@ -35,7 +44,7 @@
     <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
     <name>Quinta da Calçada</name>
     <description>
-    Quinta da Calcada Winery Vinho Verde Portugal
+    An Ionic Framework and Cordova project.
   </description>
     <author email="you@example.com" href="http://example.com.com/">
     Your Name Here
@@ -48,8 +57,6 @@
     <preference name="android-minSdkVersion" value="16" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="2000" />
-    <preference name="orientation" value="portrait" />
-    <preference name="fullscreen" value="true" />
+    <preference name="SplashScreenDelay" value="3000" />
     <icon src="resources/android/icon/drawable-xhdpi-icon.png" />
 </widget>

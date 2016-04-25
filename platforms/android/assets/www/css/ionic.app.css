@@ -9794,7 +9794,7 @@ button.button.button-icon.button-clear.ion-navicon, button.button.back-button.bu
   border-top-width: 1px;
   border-bottom-width: 0;
   background-position: top;
-  height: 44px;
+  height: 45px;
   position: fixed; }
 
 .pull-left {
@@ -9815,7 +9815,7 @@ button.button.button-icon.button-clear.ion-navicon, button.button.back-button.bu
   margin: 10px auto; }
 
 .has-footer {
-  bottom: 42px; }
+  bottom: 45px; }
 
 .bar .title {
   font-size: 15px;

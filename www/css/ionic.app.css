@@ -9732,14 +9732,14 @@ a.button {
   transition-duration: 0s; }
 
 @font-face {
-  font-family: "untitled-font-1";
-  src: url("fonts/untitled-font-1.eot");
-  src: url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"), url("fonts/untitled-font-1.woff") format("woff"), url("fonts/untitled-font-1.ttf") format("truetype"), url("fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+  font-family: "calcada";
+  src: url("fonts/calcada.eot");
+  src: url("fonts/calcada.eot?#iefix") format("embedded-opentype"), url("fonts/calcada.woff") format("woff"), url("fonts/calcada.ttf") format("truetype"), url("fonts/calcada.svg#calcada") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 [data-icon]:before {
-  font-family: "untitled-font-1" !important;
+  font-family: "calcada" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -9752,7 +9752,7 @@ a.button {
 
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  font-family: "untitled-font-1" !important;
+  font-family: "calcada" !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;
@@ -9762,26 +9762,35 @@ a.button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-food:before {
+.icon-wine:before {
   content: "\61"; }
 
-.icon-fruit:before {
+.icon-vineyard:before {
   content: "\62"; }
 
-.icon-interface:before {
+.icon-pos:before {
   content: "\63"; }
 
-.icon-nature:before {
+.icon-history:before {
   content: "\64"; }
 
-.icon-signs:before {
+.icon-location:before {
   content: "\65"; }
 
-.icon-technology:before {
+.icon-media:before {
   content: "\66"; }
 
-.icon-nature-1:before {
+.icon-region:before {
   content: "\67"; }
+
+.icon-rose:before {
+  content: "\69"; }
+
+.icon-white:before {
+  content: "\6a"; }
+
+.icon-drink:before {
+  content: "\68"; }
 
 .has-header {
   top: 75px; }
@@ -9794,8 +9803,14 @@ button.button.button-icon.button-clear.ion-navicon, button.button.back-button.bu
   border-top-width: 1px;
   border-bottom-width: 0;
   background-position: top;
-  height: 44px;
+  height: 45px;
   position: fixed; }
+
+.tabs.bar-footer {
+  height: 55px;
+  position: fixed;
+  padding: 5px 0;
+  color: #fff; }
 
 .pull-left {
   position: absolute;
@@ -9815,7 +9830,7 @@ button.button.button-icon.button-clear.ion-navicon, button.button.back-button.bu
   margin: 10px auto; }
 
 .has-footer {
-  bottom: 42px; }
+  bottom: 45px; }
 
 .bar .title {
   font-size: 15px;
@@ -9852,7 +9867,7 @@ h4 {
 
 p {
   font-size: 16px;
-  margin-bottom: 5px;
+  margin: 5px 15px;
   line-height: 24px; }
 
 body,
@@ -10038,7 +10053,7 @@ ion-slide {
     .homeButtons button p,
     .wineButtons button p {
       line-height: 14px;
-      margin-bottom: 10px;
+      margin: 10px 0 0 0;
       z-index: 10;
       font-size: 14px;
       position: relative;
@@ -10096,6 +10111,13 @@ ion-slide {
     background-image: url("../img/vineyards-story/up-close-vines.jpg");
     background-position: center center;
     background-size: cover; }
+
+.tab-item .icon {
+  display: block;
+  margin: 0 auto;
+  height: 22px;
+  font-size: 16px;
+  padding-top: 5px; }
 
 .wineCard {
   background-position: top center;

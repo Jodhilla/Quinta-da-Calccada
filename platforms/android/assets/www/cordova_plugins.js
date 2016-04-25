@@ -49,7 +49,8 @@ module.exports.metadata =
     "cordova-plugin-device": "1.1.1",
     "cordova-plugin-splashscreen": "3.2.1",
     "ionic-plugin-keyboard": "2.0.1",
-    "cordova-plugin-screen-orientation": "1.4.0"
+    "cordova-plugin-screen-orientation": "1.4.0",
+    "cordova-plugin-whitelist": "1.2.3-dev"
 };
 // BOTTOM OF METADATA
 });
