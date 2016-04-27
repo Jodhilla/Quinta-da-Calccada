@@ -22,6 +22,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default; // Include all of Ionic
 @import "www/css/icons";
 
 // ---------------------------- Layout ---------------------------------//
+
+
+
 .has-header {
   top: 75px;
 }
@@ -370,6 +373,7 @@ ion-slide {
       z-index: 5;
     }
   }
+
   #home-wine {
     background-image: url('../img/homepage-story/enjoy-grapes.jpg');
     background-position: center center;
@@ -400,6 +404,10 @@ ion-slide {
     background-position: center center;
     background-size: cover;
   }
+}
+
+a.sound i {
+  color:$gold !important;
 }
 
 .tab-item .icon {

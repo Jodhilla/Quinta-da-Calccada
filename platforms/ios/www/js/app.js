@@ -4,7 +4,8 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+var app = angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers'])
+
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -15,30 +16,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       cordova.plugins.Keyboard.disableScroll(true);
 
     }
-    if (window.StatusBar) {
-      // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
-    }
+
   });
-})
-
-.controller('AppCtrl', function($scope, $state, $ionicSlideBoxDelegate) {
-
-  // Called to navigate to the main app
-  $scope.startApp = function() {
-    $state.go('main');
-  };
-  $scope.next = function() {
-    $ionicSlideBoxDelegate.next();
-  };
-  $scope.previous = function() {
-    $ionicSlideBoxDelegate.previous();
-  };
-
-  // Called each time the slide changes
-  $scope.slideChanged = function(index) {
-    $scope.slideIndex = index;
-  };
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -285,3 +264,39 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/home');
 });
+
+app.controller("MediaController", function($scope, $cordovaMedia, $ionicLoading) {
+
+    $scope.play = function(src) {
+        var media = new Media(src, null, null, mediaStatusCallback);
+        $cordovaMedia.play(media);
+    }
+
+    var mediaStatusCallback = function(status) {
+        if(status == 1) {
+            $ionicLoading.show({template: 'Loading...'});
+        } else {
+            $ionicLoading.hide();
+        }
+    }
+
+});
+
+app.controller('AppCtrl', function($scope, $state, $ionicSlideBoxDelegate) {
+
+  // Called to navigate to the main app
+  $scope.startApp = function() {
+    $state.go('main');
+  };
+  $scope.next = function() {
+    $ionicSlideBoxDelegate.next();
+  };
+  $scope.previous = function() {
+    $ionicSlideBoxDelegate.previous();
+  };
+
+  // Called each time the slide changes
+  $scope.slideChanged = function(index) {
+    $scope.slideIndex = index;
+  };
+})

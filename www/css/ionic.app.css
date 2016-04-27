@@ -10112,6 +10112,9 @@ ion-slide {
     background-position: center center;
     background-size: cover; }
 
+a.sound i {
+  color: #87764f !important; }
+
 .tab-item .icon {
   display: block;
   margin: 0 auto;

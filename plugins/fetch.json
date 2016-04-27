@@ -44,7 +44,7 @@
             "type": "registry",
             "id": "cordova-plugin-file"
         },
-        "is_top_level": true,
+        "is_top_level": false,
         "variables": {}
     },
     "cordova-plugin-device": {
@@ -70,6 +70,14 @@
             "subdir": "."
         },
         "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-compat": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-compat"
+        },
+        "is_top_level": false,
         "variables": {}
     }
 }
