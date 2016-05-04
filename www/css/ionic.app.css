@@ -9924,17 +9924,18 @@ svg#history, svg#pos, svg#press, svg#regions, svg#vineyards, svg#wines {
 
 #menuLanguagePRT,
 #menuLanguageUSA {
-  background-color: #87764f; }
+  background-color: #444; }
   #menuLanguagePRT .item-content,
   #menuLanguageUSA .item-content {
-    background-color: #87764f;
+    background-color: #444;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center; }
   #menuLanguagePRT .item,
   #menuLanguageUSA .item {
-    background-color: #373020; }
+    background-color: #373020;
+    border-color: #87764f; }
   #menuLanguagePRT p,
   #menuLanguageUSA p {
     color: #fff; }
@@ -9976,6 +9977,17 @@ ion-slide {
   background-color: #FFFAF0; }
   .list.card img {
     width: 100%; }
+
+.slide-container {
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  background-color: #fff;
+  padding: 70% 0 15%; }
+  .slide-container h3 {
+    padding: 5% 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff; }
 
 #home .fixed-left {
   position: absolute;
@@ -10049,7 +10061,8 @@ ion-slide {
     width: 33.333333333% !important;
     border-width: 0px !important;
     border-style: none !important;
-    border-radius: 0px !important; }
+    border-radius: 0px !important;
+    background-color: #444 !important; }
     .homeButtons button p,
     .wineButtons button p {
       line-height: 14px;

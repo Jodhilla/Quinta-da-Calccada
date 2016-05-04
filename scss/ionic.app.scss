@@ -69,6 +69,7 @@ color:$white;
 .has-footer {
   bottom: 45px;
 }
+
 // ---------------------------- Typography ---------------------------------//
 .bar {
   .title {
@@ -191,9 +192,9 @@ svg {
 }
 #menuLanguagePRT,
 #menuLanguageUSA {
-  background-color: $gold;
+  background-color: #444;
   .item-content {
-    background-color: $gold;
+    background-color: #444;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -201,6 +202,7 @@ svg {
   }
   .item {
     background-color: darken($gold, 25%);
+    border-color:$gold;
   }
   p {
     color: $white;
@@ -253,6 +255,20 @@ ion-slide {
     width: 100%;
   }
 }
+
+.slide-container {
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    background-color: #fff;
+    padding: 70% 0 15%;
+    h3{
+      padding: 5% 0;
+      background-color: rgba(0,0,0,0.5);
+      color: #fff;
+    }
+}
+
 #home {
   .fixed-left {
     position: absolute;
@@ -341,6 +357,7 @@ ion-slide {
     border-width: 0px!important;
     border-style: none!important;
     border-radius: 0px!important;
+    background-color: #444 !important;
     p {
       line-height: 14px;
       margin: 10px 0 0 0 ;
