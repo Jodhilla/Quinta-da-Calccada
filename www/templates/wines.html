@@ -1,70 +1,67 @@
 <ion-view title="Wines" id="wines" style="background-color:#000000;">
 
-  </ion-nav-buttons>
-  <ion-content padding="true" class="has-header">
+  <ion-content padding="false" class="has-header">
 
-    <ion-slide-box class="wineSlides" does-continue="false" show-pager='false' slide-interval="3000" auto-play="false" on-slide-changed="slideChanged(index)">
-      <ion-slide>
-        <div class="buttonContainer black">
-          <button class=" button-clear no-animation float-right" ng-click="next()">NEXT&emsp;<i class="ion-chevron-right"></i></button>
-        </div>
+    <ion-slide-box class="wineSlides" does-continue="false" show-pager='false' slide-interval="3000" auto-play="false" on-slide-changed="slideChanged(index)" show-pager="false" slide-tabs-scrollable="false" ion-slide-tabs>
+      <ion-slide ion-slide-tab-label="j">
+
         <img class="full-image" src="img/wines-story-img/quinta-family.jpg">
-        <button ui-sref="app.quinta" class="button button-light  button-outline  button-block">Quinta Winemaker Notes</button>
+        <div class="slide-content">
 
-        <p>
-          The quintessential Calçada wines are made in very limited production showing the ultimate potential of the Vinho Verde region. Our range of selections explores the individual identities of Calçada’s vineyards. The Quinta Portal portfolio compares to some
-          of the finest white wines in the world delivering outstanding gastronomical experiences.
-        </p>
-        <p>
-          Grapes selected from the best parcels and handsorted. Using batonage sur lies in the Quinta da Portal enhances the character and identity of our parcels.
-        </p>
-      </ion-slide>
-      <ion-slide>
-        <div class="buttonContainer black">
+          <button ui-sref="app.quinta" class="button button-light  button-outline  button-block">Quinta Winemaker Notes</button>
 
-          <button class="button-clear no-animation float-left" ng-click="previous()"><i class="ion-chevron-left"></i>&emsp;PREVIOUS</button>
-          <button class="button-clear no-animation float-right" ng-click="next()">NEXT&emsp;<i class="ion-chevron-right"></i></button>
+          <p>
+            The quintessential Calçada wines are made in very limited production showing the ultimate potential of the Vinho Verde region. Our range of selections explores the individual identities of Calçada’s vineyards. The Quinta Portal portfolio compares to some
+            of the finest white wines in the world delivering outstanding gastronomical experiences.
+          </p>
+          <p>
+            Grapes selected from the best parcels and handsorted. Using batonage sur lies in the Quinta da Portal enhances the character and identity of our parcels.
+          </p>
         </div>
-            <img class="full-image" src="img/wines-story-img/portal-family.jpg">
-
-
-            <button ui-sref="app.portal" class="button button-light  button-outline  button-block"> Portal Winemaker Notes </button>
-
-
-            <p>
-              The Portal da Calcada selections include wines made from some of the oldest documented vines in the Vinho Verde Region. Very limited yields, hand harvesting and cluster sorting give the deepest and richest character to wines from this versatile region.
-              The winemaking philosophy of respecting the purity of the grown fruit is to use wild yeast in the wine production process.
-            </p>
       </ion-slide>
-      <ion-slide>
-        <div class="buttonContainer white">
+      <ion-slide ion-slide-tab-label="i">
 
-          <button class="button-clear no-animation float-left" ng-click="previous()"><i class="ion-chevron-left"></i>&emsp;PREVIOUS</button>
+        <img class="full-image" src="img/wines-story-img/portal-family.jpg">
+
+        <div class="slide-content">
+          <button ui-sref="app.portal" class="button button-light padding button-outline  button-block"> Portal Winemaker Notes </button>
+
+
+          <p>
+            The Portal da Calcada selections include wines made from some of the oldest documented vines in the Vinho Verde Region. Very limited yields, hand harvesting and cluster sorting give the deepest and richest character to wines from this versatile region.
+            The winemaking philosophy of respecting the purity of the grown fruit is to use wild yeast in the wine production process.
+          </p>
         </div>
+      </ion-slide>
+      <ion-slide ion-slide-tab-label="h">
+
         <img class="full-image" src="img/wines-story-img/lago-family.jpg">
+        <div class="slide-content">
 
-        <button ui-sref="app.lago" class="button button-light  button-outline  button-block">Lago Winemaker Notes</button>
+          <button ui-sref="app.lago" class="button button-light  button-outline  button-block">Lago Winemaker Notes</button>
 
-        <p>
-          The LAGO collection White and Rosé wines share the same commitment to hand-picked, Estate grown fruit that comes from the Estate of Calcada. The wines represent an unsurpassed quality and value, delivering European elegance where the  brand fills a complete
-          level of lifestyle, with appealing packaging, focusing on blends both in white, Red and a special Rose.
-        </p>
+          <p>
+            The LAGO collection White and Rosé wines share the same commitment to hand-picked, Estate grown fruit that comes from the Estate of Calcada. The wines represent an unsurpassed quality and value, delivering European elegance where the  brand fills a complete
+            level of lifestyle, with appealing packaging, focusing on blends both in white, Red and a special Rose.
+          </p>
+        </div>
       </ion-slide>
     </ion-slide-box>
 
   </ion-content>
   <ion-footer-bar class="tabs bar-dark tabs-icon-top">
     <div class="tab-item" ui-sref="app.whiteVaretals" id="winesWhite">
-    <i class="icon icon-white"></i>
-      WHITE
+      <i class="icon icon-white"></i>
+      <p>WHITE</p>
     </div>
     <div class="tab-item" ui-sref="app.redVaretalsRos" id="winesRose">
       <i class="icon icon-rose"></i>
-      RED (ROSÉ)
+      <p>ROSÉ</p>
     </div>
     <div class="tab-item" ui-sref="app.redVaretals" id="winesRed">
-      <i class="icon icon-drink"></i>
-      RED
+      <i class="icon icon-red"></i>
+      <p>RED</p>
     </div>
   </ion-footer-bar>
+
 </ion-view>

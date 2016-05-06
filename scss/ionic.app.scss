@@ -69,6 +69,9 @@ color:$white;
 .has-footer {
   bottom: 45px;
 }
+.bar-footer.bar-dark .button.button-clear {
+    font-size: 10px;
+  }
 
 // ---------------------------- Typography ---------------------------------//
 .bar {
@@ -428,13 +431,12 @@ a.sound i {
 }
 
 .tab-item .icon {
-    display: block;
-    margin: 0 auto;
-    height: 22px;
-    font-size: 16px;
-        padding-top: 5px;
+    font-size: 50px;
 }
 
+.button.button-light.button-outline {
+    border-color: $gold;
+  }
 // ---------------------------- Wine Cards ---------------------------------//
 .wineCard {
   background-position: top center;
@@ -490,6 +492,113 @@ p {
   background-image: url('../img/wines-story-img/tinta-barroca-grape.jpg');
 }
 
+
+// ---------------------------- Sliding Tabs ---------------------------------//
+
+.slider {
+    height: 100vh;
+}
+
+.slidingTabs {
+    height: 48px;
+    z-index: 10;
+    margin-top: 5px;
+
+}
+
+#wines .slidingTabs {
+      font-family: calcada;
+      ul li {
+        font-size: 50px;
+        text-transform:lowercase !important;
+      }
+    }
+
+
+.slidingTabs .scroll {
+    height: auto;
+    min-width: 100%;
+}
+
+.slidingTabs ul {
+    height: 48px;
+}
+
+.slidingTabs ul li {
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    float: left;
+    margin: 0;
+    padding: 0 12px 20px 12px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.6);
+    -webkit-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    text-transform:uppercase;
+}
+
+.slidingTabs ul li.tab-active {
+    color: $gold;
+}
+
+.slidingTabs ul li .ink {
+    display: block;
+    position: absolute;
+    background: rgba(56, 147, 245, 0.8);
+    border-radius: 100%;
+    transform: scale(0);
+}
+
+.slidingTabs ul li .ink.animate {
+    -webkit-animation: ripple 0.65s linear;
+    animation: ripple 0.65s linear;
+}
+
+.slidingTabs .tab-indicator-wrapper {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-transform: translateY(-2px);
+    position: absolute;
+}
+
+.slidingTabs .tab-indicator-wrapper .tab-indicator {
+    height: 100%;
+    background-color: $gold;
+    width: 70px;
+    position: relative;
+}
+
+.slide-content {
+  padding:0px 10px;
+}
+
+.tab-item .icon {
+    display: block;
+    margin: 0 auto;
+    height: 22px;
+    font-size: 16px;
+        padding-top: 5px;
+}
+
+.tabs-icon-top.tabs .tab-item p {
+  margin: 7px 0 0 0;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.slide-content h2 {
+  margin-top:8px;
+}
+.slide {
+  padding-bottom: 20px;
+}
+ion-slide {
+    padding-bottom: 44px;
+}
 // ---------------------------- Media Querys ---------------------------------//
 @media only screen and (min-device-width:767px) {
   .homeButtons {

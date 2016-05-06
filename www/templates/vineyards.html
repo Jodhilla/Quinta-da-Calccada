@@ -1,62 +1,64 @@
-<ion-view title="Historic Vineyards" id="page5" style="background-color:#000000;" >
-  <ion-content padding="true" class="has-header">
-    <button ui-sref="app.ourVineyards" id="ourVineyards" class="button button-light  button-outline  button-block">OUR VINEYARDS</button>
+<ion-view title="Historic Vineyards" id="page5" style="background-color:#000000;">
+  <ion-content padding="false" class="has-header">
 
-    <ion-slide-box does-continue="false" show-pager='true' slide-interval="3000" auto-play="flase" on-slide-changed="slideChanged(index)">
-      <ion-slide>
-        <div class="list card">
+    <ion-slide-box does-continue="false" show-pager='true' slide-interval="3000" auto-play="flase" on-slide-changed="slideChanged(index)" slide-tabs-scrollable="false" ion-slide-tabs>
+      <ion-slide ion-slide-tab-label="VINEYARDS">
 
-            <img class="full-image" src="img/vineyards-story/calcada-vineyards-beautiful.jpg">
-            <div class="divider"></div>
-            <p>
-              Quinta da Calçada has the oldest certified vineyard in the Vinho Verde region. Ages range from 50 to 100 years.
-            </p>
-            <div class="divider"></div>
-            <p>
-              Our many Vineyards are located throughout the sub-region of Amarante, within Vinho Verde; a brief 40 minutes from Oporto and 15 minutes from the entrance to Douro Valley. Because of its location and higher altitude we enjoy a diverse microclimate that
-              makes our terroir so distinctive.
-            </p>
+        <img class="full-image" src="img/vineyards-story/calcada-vineyards-beautiful.jpg">
+        <div class="slide-content">
 
+          <button ui-sref="app.ourVineyards" id="ourVineyards" class="button button-light  button-outline  button-block">OUR VINEYARDS</button>
+
+          <p>
+            Quinta da Calçada has the oldest certified vineyard in the Vinho Verde region. Ages range from 50 to 100 years.
+          </p>
+          <div class="divider"></div>
+          <p>
+            Our many Vineyards are located throughout the sub-region of Amarante, within Vinho Verde; a brief 40 minutes from Oporto and 15 minutes from the entrance to Douro Valley. Because of its location and higher altitude we enjoy a diverse microclimate that
+            makes our terroir so distinctive.
+          </p>
         </div>
       </ion-slide>
-      <ion-slide>
-        <div class="list card">
+      <ion-slide ion-slide-tab-label="Terroir">
 
-            <img class="full-image" src="img/homepage-story/qdc-casa-1.jpg">
-            <h2 class="item-header">Terroir</h2>
-            <div class="divider"></div>
-            <p>
-              Hot day time temperatures are ameliorated by the cooling effects of the Atlantic Ocean in the evening. In our highest altitude vineyards, the difference in temperature between day and night can be as significant as 18ºC (30ºF). Such wide daily temperatures
-              result in longer hang time and more even ripening for the grapes. The early harvest in the microclimate of Amarante assures prime picking times, and minimalizing exposure to autumn rains.
-            </p>
+        <img class="full-image" src="img/homepage-story/qdc-casa-1.jpg">
+        <div class="slide-content">
 
+          <h2 class="item-header">Terroir</h2>
+          <div class="divider"></div>
+          <p>
+            Hot day time temperatures are ameliorated by the cooling effects of the Atlantic Ocean in the evening. In our highest altitude vineyards, the difference in temperature between day and night can be as significant as 18ºC (30ºF). Such wide daily temperatures
+            result in longer hang time and more even ripening for the grapes. The early harvest in the microclimate of Amarante assures prime picking times, and minimalizing exposure to autumn rains.
+          </p>
         </div>
       </ion-slide>
-      <ion-slide>
+      <ion-slide ion-slide-tab-label="Practices">
 
-        <div class="list card">
 
-            <img class="full-image" src="img/vineyards-story/vineyard-and-cellars.jpg">
-            <h2 class="item-header">Vineyard Practices</h2>
-            <div class="divider"></div>
+        <img class="full-image" src="img/vineyards-story/vineyard-and-cellars.jpg">
+        <div class="slide-content">
 
-            <p>
-              The viticultural philosophy is of minimum intervention with respect for nature, the grape and the wine. The use of high density planting with low production per vine to extracts the full complexity of each grape. Optimal nutrition and irrigation is applied
-              specific to vineyards needs. Sensorial analysis of the grapes is used to evaluate maturation to indicate time for harvesting. Careful selection and collection of each parcel is a core operation for the vinicultural team. Sustainable practices,
-              certified by sativa.
-            </p>
-            <h2 class="item-header">Soil</h2>
-            <p>
-              The soils of Calçada Estate consist mainly of granite and some mixes of chist.
-            </p>
+          <h2 class="item-header">Vineyard Practices</h2>
+          <div class="divider"></div>
 
+          <p>
+            The viticultural philosophy is of minimum intervention with respect for nature, the grape and the wine. The use of high density planting with low production per vine to extracts the full complexity of each grape. Optimal nutrition and irrigation is applied
+            specific to vineyards needs. Sensorial analysis of the grapes is used to evaluate maturation to indicate time for harvesting. Careful selection and collection of each parcel is a core operation for the vinicultural team. Sustainable practices,
+            certified by sativa.
+          </p>
+          <h2 class="item-header">Soil</h2>
+          <p>
+            The soils of Calçada Estate consist mainly of granite and some mixes of chist.
+          </p>
         </div>
       </ion-slide>
     </ion-slide-box>
 
   </ion-content>
-  <div class="bar bar-dark bar-footer padding">
+  <!--div class="bar bar-dark bar-footer padding">
     <button class="button-clear button button-clear pull-left" ng-click="previous()" ng-show="slideIndex > 0"><i class="ion-chevron-left">&emsp;PREVIOUS</i></button>
     <button class="button-clear button button-clear pull-right" ng-click="next()" ng-show="slideIndex != 2">NEXT&emsp;<i class="ion-chevron-right"></i></button>
-  </div>
+  </div-->
+
+
 </ion-view>
