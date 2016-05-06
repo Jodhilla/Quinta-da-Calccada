@@ -20,6 +20,7 @@ var app = angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers'
   });
 })
 
+
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
@@ -282,7 +283,7 @@ app.controller("MediaController", function($scope, $cordovaMedia, $ionicLoading)
 
 });
 
-app.controller('AppCtrl', function($scope, $state, $ionicSlideBoxDelegate) {
+app.controller('AppCtrl', function($scope, $state, $ionicSlideBoxDelegate, $ionicModal) {
 
   // Called to navigate to the main app
   $scope.startApp = function() {
@@ -299,4 +300,21 @@ app.controller('AppCtrl', function($scope, $state, $ionicSlideBoxDelegate) {
   $scope.slideChanged = function(index) {
     $scope.slideIndex = index;
   };
+
 })
+
+app.controller('ImageZoom', function($scope, $ionicModal) {
+
+  $ionicModal.fromTemplateUrl('templates/gallery-zoomview.html', {
+    scope: $scope
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+
+  $scope.openModal = function() {
+    $scope.modal.show()
+    $scope.imgUrl = "img/region-story/press-kit-map.jpg"
+  }
+
+
+});

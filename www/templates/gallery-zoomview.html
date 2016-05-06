@@ -1,0 +1,15 @@
+<ion-modal-view on-swipe-down="modal.hide()">
+
+  <ion-content class="padding" scroll="false">
+
+    <ion-scroll zooming="true" direction="xy" delegate-handle="zoom-pane" class="zoom-pane" min-zoom="1" scrollbar-x="false" scrollbar-y="false" overflow-scroll="false">
+      <img ng-src="{{imgUrl}}">
+    </ion-scroll>
+    <div class="swipe">
+      <p>SWIPE DOWN TO CLOSE</p>
+<i class="icon ion-chevron-down"></i>
+    </div>
+
+  </ion-content>
+
+</ion-modal-view>

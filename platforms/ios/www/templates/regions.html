@@ -1,12 +1,16 @@
 <ion-view title="Regions" id="page6" style="background-color:#000000;" >
-  <ion-content padding="false" class="has-header">
+  <ion-content padding="false" class="has-header" ng-controller="ImageZoom">
     <ion-slide-box does-continue="false" show-pager="true" slide-interval="3000" auto-play="false" on-slide-changed="slideChanged(index)">
       <ion-slide>
 
-            <img class="full-image" src="img/region-story/press-kit-map.jpg">
+            <img ng-click="openModal()" class="full-image" src="img/region-story/press-kit-map-zoom.jpg">
+            <div class="slide-content">
+              <button ui-sref="app.ourVineyards" id="ourVineyards" class="button button-light  button-outline  button-block">OUR VINEYARDS</button>
+
             <p>
               Vinho verde is the home of 20 white varietals and 17 red varietals recommended or permitted by the DOC. The soils of the region consist primarily of granite, sand, sandy loam, chist, and in some areas clay.
             </p>
+</div>
       </ion-slide>
       <ion-slide>
 

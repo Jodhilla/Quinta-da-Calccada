@@ -301,33 +301,24 @@ app.controller('AppCtrl', function($scope, $state, $ionicSlideBoxDelegate, $ioni
     $scope.slideIndex = index;
   };
 
-  $ionicModal.fromTemplateUrl('my-modal.html', {
-     scope: $scope,
-     animation: 'slide-in-up',
+})
+
+app.controller('ImageZoom', function($scope, $ionicModal) {
+
+  $ionicModal.fromTemplateUrl('templates/gallery-zoomview.html', {
+    scope: $scope
   }).then(function(modal) {
-     $scope.modal = modal;
+    $scope.modal = modal;
   });
+
+  $scope.imageURL = function() {
+
+  }
 
   $scope.openModal = function() {
-     $scope.modal.show();
-  };
+    $scope.modal.show()
+    $scope.imgUrl = "img/region-story/press-kit-map.jpg"
+  }
 
-  $scope.closeModal = function() {
-     $scope.modal.hide();
-  };
 
-  //Cleanup the modal when we're done with it!
-  $scope.$on('$destroy', function() {
-     $scope.modal.remove();
-  });
-
-  // Execute action on hide modal
-  $scope.$on('modal.hidden', function() {
-     // Execute action
-  });
-
-  // Execute action on remove modal
-  $scope.$on('modal.removed', function() {
-     // Execute action
-  });
-})
+});
