@@ -9968,8 +9968,7 @@ svg#history, svg#pos, svg#press, svg#regions, svg#vineyards, svg#wines {
 ion-slide {
   text-align: center; }
   ion-slide h2 {
-    font-size: 21px;
-    color: #87764f; }
+    font-size: 21px; }
   ion-slide .h1,
   ion-slide .h2,
   ion-slide .h3,

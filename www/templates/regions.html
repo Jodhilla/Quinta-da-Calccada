@@ -3,10 +3,14 @@
     <ion-slide-box does-continue="false" show-pager="true" slide-interval="3000" auto-play="false" on-slide-changed="slideChanged(index)">
       <ion-slide>
 
-            <img class="full-image" src="img/region-story/press-kit-map.jpg">
+            <img ng-click = "openModal()" class="full-image" src="img/region-story/press-kit-map-zoom.jpg">
+            <div class="slide-content">
+              <button ui-sref="app.ourVineyards" id="ourVineyards" class="button button-light  button-outline  button-block">OUR VINEYARDS</button>
+
             <p>
               Vinho verde is the home of 20 white varietals and 17 red varietals recommended or permitted by the DOC. The soils of the region consist primarily of granite, sand, sandy loam, chist, and in some areas clay.
             </p>
+</div>
       </ion-slide>
       <ion-slide>
 
@@ -36,3 +40,19 @@
     <button class="button-clear button button-clear pull-right" ng-click="next()" ng-show="slideIndex != 3">NEXT&emsp;<i class="ion-chevron-right"></i></button>
   </div>
 </ion-view>
+<script id = "my-modal.html" type = "text/ng-template">
+   <ion-modal-view>
+     <ion-header-bar class="bar bar-dark">
+   <h1 class = "title">Pinch to zoom</h1>
+</ion-header-bar>
+      <ion-content>
+        <div class="slide-content">
+
+        <img class="full-image" src="img/region-story/press-kit-map.jpg">
+
+         <button class = "button button-light  button-outline  button-block"
+            ng-click = "closeModal()">Close</button>
+          </div>
+      </ion-content>
+   </ion-modal-view>
+</script>
