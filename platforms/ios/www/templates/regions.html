@@ -1,42 +1,103 @@
-<ion-view title="Regions" id="page6" style="background-color:#000000;" >
-  <ion-content padding="false" class="has-header" ng-controller="ImageZoom">
-    <ion-slide-box does-continue="false" show-pager="true" slide-interval="3000" auto-play="false" on-slide-changed="slideChanged(index)">
-      <ion-slide>
+<ion-view title="Regions" id="page6" style="background-color:#000000;">
+  <ion-content padding="false" class="has-header" ng-controller="ImageZoom" scroll="false">
+    <ion-slide-box  class="slide-view-height" does-continue="false" show-pager="false" slide-interval="3000" auto-play="false" slide-tabs-scrollable="false" ion-slide-tabs>
+      <ion-slide ion-slide-tab-label="Region">
+<ion-content>
+        <img ng-click="openModal()" class="full-image" src="img/region-story/press-kit-map-zoom.jpg">
+        <div class="slide-content">
+          <!--button ui-sref="app.ourVineyards" id="ourVineyards" class="button button-light  button-outline  button-block">OUR VINEYARDS</button-->
 
-            <img ng-click="openModal()" class="full-image" src="img/region-story/press-kit-map-zoom.jpg">
-            <div class="slide-content">
-              <button ui-sref="app.ourVineyards" id="ourVineyards" class="button button-light  button-outline  button-block">OUR VINEYARDS</button>
+          <p>
+            Vinho verde is the home of 20 white varietals and 17 red varietals recommended or permitted by the DOC. The soils of the region consist primarily of granite, sand, sandy loam, chist, and in some areas clay.
+          </p>
+        </div>
+      </ion-content>
 
-            <p>
-              Vinho verde is the home of 20 white varietals and 17 red varietals recommended or permitted by the DOC. The soils of the region consist primarily of granite, sand, sandy loam, chist, and in some areas clay.
-            </p>
-</div>
       </ion-slide>
-      <ion-slide>
+      <ion-slide ion-slide-tab-label="About">
+        <ion-content>
 
 
-            <img class="full-image" src="img/region-story/vinho-verde-region-valley.jpg">
-            <p>
-              It’s a mountainous region that extends from the Atlantic Ocean into the higher mountains regions bordering of Douro Valley. The region averages between 1,200 to 1,600 mm/sqm.
-            </p>
+        <img class="full-image" src="img/region-story/vinho-verde-region-valley.jpg">
+        <p>
+          It’s a mountainous region that extends from the Atlantic Ocean into the higher mountains regions bordering of Douro Valley. The region averages between 1,200 to 1,600 mm/sqm.
+        </p>
+        <div class="divider"></div>
+        <img class="full-image" src="img/region-story/abertura.jpg">
+        <p>
+          It is composed of nine different sub-regions each of which present distinctive characteristics. Amarante subregion has a steep orography with soils being composed mostly of granite where the ocean influences impact its microclimate.
+        </p>
+        <div class="divider"></div>
+        <img class="full-image" src="img/region-story/autumn-colors-vineyard.jpg">
+        <p>
+          Vinho Verde is a unique DOC region in the world with approximately 20,000 ha of land under vine. It has 20,000 producers with average plots under 1ha. Barely 4% of the total bottled wine comes from those who Quintas which grow and produce their own product.
+        </p>
+      </ion-content>
+
       </ion-slide>
-      <ion-slide>
 
-            <img class="full-image" src="img/region-story/abertura.jpg">
-            <p>
-              It is composed of nine different sub-regions each of which present distinctive characteristics. Amarante subregion has a steep orography with soils being composed mostly of granite where the ocean influences impact its microclimate.
-            </p>
-      </ion-slide>
-      <ion-slide>
+      <ion-slide ion-slide-tab-label="Terroir">
+        <ion-content>
 
-            <img class="full-image" src="img/region-story/autumn-colors-vineyard.jpg">
-            <p>
-              Vinho Verde is a unique DOC region in the world with approximately 20,000 ha of land under vine. It has 20,000 producers with average plots under 1ha. Barely 4% of the total bottled wine comes from those who Quintas which grow and produce their own product.
-            </p>
+        <img class="full-image" src="img/homepage-story/qdc-casa-1.jpg">
+        <div class="slide-content">
+
+          <h2 class="item-header">Terroir</h2>
+          <div class="divider"></div>
+          <p>
+            Hot day time temperatures are ameliorated by the cooling effects of the Atlantic Ocean in the evening. In our highest altitude vineyards, the difference in temperature between day and night can be as significant as 18ºC (30ºF). Such wide daily temperatures
+            result in longer hang time and more even ripening for the grapes. The early harvest in the microclimate of Amarante assures prime picking times, and minimalizing exposure to autumn rains.
+          </p>
+        </div>
+      </ion-content>
+
       </ion-slide>
+      <ion-slide ion-slide-tab-label="VINEYARDS">
+        <ion-content>
+
+        <img class="full-image" src="img/vineyards-story/calcada-vineyards-beautiful.jpg">
+        <div class="slide-content">
+
+
+          <p>
+            Quinta da Calçada has the oldest certified vineyard in the Vinho Verde region. Ages range from 50 to 100 years.
+          </p>
+          <div class="divider"></div>
+          <p>
+            Our many Vineyards are located throughout the sub-region of Amarante, within Vinho Verde; a brief 40 minutes from Oporto and 15 minutes from the entrance to Douro Valley. Because of its location and higher altitude we enjoy a diverse microclimate that
+            makes our terroir so distinctive.
+          </p>
+        </div>
+      </ion-content>
+
+      </ion-slide>
+      <ion-slide ion-slide-tab-label="Practices">
+        <ion-content>
+
+
+        <img class="full-image" src="img/vineyards-story/vineyard-and-cellars.jpg">
+        <div class="slide-content">
+
+          <h2 class="item-header">Vineyard Practices</h2>
+          <div class="divider"></div>
+
+          <p>
+            The viticultural philosophy is of minimum intervention with respect for nature, the grape and the wine. The use of high density planting with low production per vine to extracts the full complexity of each grape. Optimal nutrition and irrigation is applied
+            specific to vineyards needs. Sensorial analysis of the grapes is used to evaluate maturation to indicate time for harvesting. Careful selection and collection of each parcel is a core operation for the vinicultural team. Sustainable practices,
+            certified by sativa.
+          </p>
+          <h2 class="item-header">Soil</h2>
+          <p>
+            The soils of Calçada Estate consist mainly of granite and some mixes of chist.
+          </p>
+        </div>
+      </ion-content>
+
+      </ion-slide>
+
   </ion-content>
-  <div class="bar bar-dark bar-footer padding">
+  <!--div class="bar bar-dark bar-footer padding">
     <button class="button-clear button button-clear pull-left" ng-click="previous()" ng-show="slideIndex > 0"><i class="ion-chevron-left">&emsp;PREVIOUS</i></button>
     <button class="button-clear button button-clear pull-right" ng-click="next()" ng-show="slideIndex != 3">NEXT&emsp;<i class="ion-chevron-right"></i></button>
-  </div>
+  </div-->
 </ion-view>

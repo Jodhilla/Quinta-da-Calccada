@@ -55,11 +55,11 @@ var app = angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers'
     }
   })
 
-  .state('app.whiteVaretals', {
-    url: '/whiteVaretals',
+  .state('app.varetals', {
+    url: '/varetals',
     views: {
       'appContent': {
-        templateUrl: 'templates/whiteVaretals.html',
+        templateUrl: 'templates/varetals.html',
       },
       'menuLanguage': {
         templateUrl: 'templates/usa.html'
@@ -310,6 +310,10 @@ app.controller('ImageZoom', function($scope, $ionicModal) {
   }).then(function(modal) {
     $scope.modal = modal;
   });
+
+  $scope.imageURL = function() {
+
+  }
 
   $scope.openModal = function() {
     $scope.modal.show()

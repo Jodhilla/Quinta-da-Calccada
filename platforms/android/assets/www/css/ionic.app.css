@@ -9765,37 +9765,47 @@ a.button {
 .icon-wine:before {
   content: "\61"; }
 
-.icon-vineyard:before {
+.icon-rose:before {
+  content: "\6c"; }
+
+.icon-red:before {
+  content: "\6d"; }
+
+.icon-white:before {
   content: "\62"; }
 
-.icon-pos:before {
+.icon-vineyard:before {
   content: "\63"; }
 
-.icon-history:before {
+.icon-pos:before {
   content: "\64"; }
 
-.icon-location:before {
+.icon-lago:before {
   content: "\65"; }
 
-.icon-media:before {
+.icon-history:before {
   content: "\66"; }
 
 .icon-region:before {
   content: "\67"; }
 
-.icon-rose:before {
+.icon-portal:before {
+  content: "\68"; }
+
+.icon-quinta:before {
   content: "\69"; }
 
-.icon-white:before {
+.icon-location:before {
   content: "\6a"; }
 
-.icon-drink:before {
-  content: "\68"; }
+.icon-media:before {
+  content: "\6b"; }
 
 .has-header {
   top: 75px; }
 
-button.button.button-icon.button-clear.ion-navicon, button.button.back-button.buttons.button-clear.header-item {
+button.button.back-button.buttons.button-clear.header-item,
+button.button.button-icon.button-clear.ion-navicon {
   padding-top: 15px; }
 
 .bar-footer {
@@ -9832,8 +9842,8 @@ button.button.button-icon.button-clear.ion-navicon, button.button.back-button.bu
 .has-footer {
   bottom: 45px; }
 
-ion-content {
-  height: 100% !important; }
+.bar-footer.bar-dark .button.button-clear {
+  font-size: 10px; }
 
 .bar .title {
   font-size: 15px;
@@ -9879,7 +9889,7 @@ ion-content {
 
 .h3,
 h3 {
-  font-size: 16px;
+  font-size: 5vw;
   text-align: center;
   color: #87764f; }
 
@@ -9927,28 +9937,27 @@ svg#history, svg#pos, svg#press, svg#regions, svg#vineyards, svg#wines {
 
 #menuLanguagePRT,
 #menuLanguageUSA {
-  background-color: #444; }
+  background-color: #fff; }
   #menuLanguagePRT .item-content,
   #menuLanguageUSA .item-content {
-    background-color: #444;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center; }
   #menuLanguagePRT .item,
   #menuLanguageUSA .item {
-    background-color: #373020;
     border-color: #87764f; }
   #menuLanguagePRT p,
   #menuLanguageUSA p {
-    color: #fff; }
+    color: #444; }
   #menuLanguagePRT span,
   #menuLanguageUSA span {
-    color: #fff;
+    color: #444;
     margin-left: 10px; }
   #menuLanguagePRT i,
   #menuLanguageUSA i {
-    color: #fff;
+    color: #87764f;
     font-size: 20px; }
 
 .slider-pager {
@@ -9959,8 +9968,7 @@ svg#history, svg#pos, svg#press, svg#regions, svg#vineyards, svg#wines {
 ion-slide {
   text-align: center; }
   ion-slide h2 {
-    font-size: 21px;
-    color: #87764f; }
+    font-size: 21px; }
   ion-slide .h1,
   ion-slide .h2,
   ion-slide .h3,
@@ -10020,6 +10028,9 @@ ion-slide {
   .grapes .slider-pager .slider-pager-page {
     color: #87764f; }
 
+.grapes .h3, .grapes h3 {
+  font-size: 7vw; }
+
 .wineSlides .slider-pager {
   top: 5px !important; }
 
@@ -10034,7 +10045,8 @@ ion-slide {
     background-color: #000; }
   .buttonContainer.white {
     background-color: #fff; }
-    .buttonContainer.white .float-right, .buttonContainer.white .float-left {
+    .buttonContainer.white .float-left,
+    .buttonContainer.white .float-right {
       color: #87764f !important; }
   .buttonContainer .float-left {
     float: left;
@@ -10069,7 +10081,7 @@ ion-slide {
     .homeButtons button p,
     .wineButtons button p {
       line-height: 14px;
-      margin: 10px 0 0 0;
+      margin: 10px 0 0;
       z-index: 10;
       font-size: 14px;
       position: relative;
@@ -10122,8 +10134,8 @@ ion-slide {
     background-image: url("../img/wines-story-img/hanging-grapes.jpg");
     background-position: center center;
     background-size: cover; }
-  .homeButtons #home-pressKit,
-  .wineButtons #home-pressKit {
+  .homeButtons #home-varetals,
+  .wineButtons #home-varetals {
     background-image: url("../img/vineyards-story/up-close-vines.jpg");
     background-position: center center;
     background-size: cover; }
@@ -10132,52 +10144,200 @@ a.sound i {
   color: #87764f !important; }
 
 .tab-item .icon {
-  display: block;
-  margin: 0 auto;
-  height: 22px;
-  font-size: 16px;
-  padding-top: 5px; }
+  font-size: 50px; }
+
+.button.button-light.button-outline {
+  border-color: #87764f; }
+
+.modal {
+  background-color: transparent; }
+  .modal ion-content {
+    background: rgba(68, 68, 68, 0.8); }
+  .modal .swipe {
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    margin: 10px auto;
+    width: 50%;
+    left: 25%; }
+    .modal .swipe p {
+      font-size: 10px; }
 
 .wineCard {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 270px;
   background-blend-mode: multiply; }
-  .wineCard h3, .wineCard p, .wineCard .divider {
+  .wineCard .divider,
+  .wineCard h3,
+  .wineCard p {
     z-index: 10;
     position: relative; }
   .wineCard p {
     padding-top: 250px; }
 
 #alvarinho {
-  background-image: url("../img/wines-story-img/alvarihno-grape.jpg"); }
+  background-image: url("../img/wines-story-img/alvarihno-grape.png"); }
 
 #loureiro {
-  background-image: url("../img/wines-story-img/loureiro-grape.jpg"); }
+  background-image: url("../img/wines-story-img/loureiro-grape.png"); }
 
 #arinto {
-  background-image: url("../img/wines-story-img/arinto-grape.jpg"); }
+  background-image: url("../img/wines-story-img/arinto-grape.png"); }
 
 #azal {
-  background-image: url("../img/wines-story-img/azal-grape.jpg"); }
+  background-image: url("../img/wines-story-img/azal-grape.png"); }
 
 #trajadura {
-  background-image: url("../img/wines-story-img/trajadura-grape.jpg"); }
+  background-image: url("../img/wines-story-img/trajadura-grape.png"); }
 
 #vinhao {
-  background-image: url("../img/wines-story-img/vinhao-grape.jpg"); }
+  background-image: url("../img/wines-story-img/vinhao-grape.png"); }
 
 #nacional {
-  background-image: url("../img/wines-story-img/touriga-nacional-grape.jpg"); }
+  background-image: url("../img/wines-story-img/touriga-nacional-grape.png"); }
 
 #franca {
-  background-image: url("../img/wines-story-img/touriga-franca-grape.jpg"); }
+  background-image: url("../img/wines-story-img/touriga-franca-grape.png"); }
 
 #roriz {
-  background-image: url("../img/wines-story-img/tinta-roriz-grape.jpg"); }
+  background-image: url("../img/wines-story-img/tinta-roriz-grape.png"); }
 
 #barroca {
-  background-image: url("../img/wines-story-img/tinta-barroca-grape.jpg"); }
+  background-image: url("../img/wines-story-img/tinta-barroca-grape.png"); }
+
+#varetals .divider {
+  margin: 30px auto !important; }
+
+#varetals .h3, #varetals h3 {
+  color: #fff; }
+
+.slider {
+  height: 100vh; }
+
+.slidingTabs {
+  height: 48px;
+  z-index: 10;
+  margin-top: 5px; }
+
+#wines .slidingTabs {
+  font-family: calcada; }
+  #wines .slidingTabs ul li {
+    font-size: 40px;
+    text-transform: lowercase !important; }
+
+.slidingTabs .scroll {
+  height: auto;
+  min-width: 100%; }
+
+.slidingTabs ul {
+  height: 48px; }
+
+.slidingTabs ul li {
+  height: 48px;
+  line-height: 40px;
+  text-align: center;
+  float: left;
+  margin: 0;
+  padding: 0 12px 20px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase; }
+
+.slidingTabs ul li.tab-active {
+  color: #87764f; }
+
+.slidingTabs ul li .ink {
+  display: block;
+  position: absolute;
+  background: rgba(56, 147, 245, 0.8);
+  border-radius: 100%;
+  transform: scale(0); }
+
+.slidingTabs ul li .ink.animate {
+  -webkit-animation: ripple 0.65s linear;
+  animation: ripple 0.65s linear; }
+
+.slidingTabs .tab-indicator-wrapper {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transform: translateY(-2px);
+  position: absolute; }
+
+.slidingTabs .tab-indicator-wrapper .tab-indicator {
+  height: 100%;
+  background-color: #87764f;
+  width: 70px;
+  position: relative; }
+
+.slide-content {
+  padding: 0 10px; }
+
+.tab-item .icon {
+  display: block;
+  margin: 0 auto;
+  height: 22px;
+  font-size: 16px;
+  padding-top: 5px; }
+
+.tabs-icon-top.tabs .tab-item p {
+  margin: 7px 0 0;
+  font-size: 10px;
+  line-height: 10px; }
+
+.slide-content h2 {
+  margin-top: 8px; }
+
+.slide {
+  padding-bottom: 20px; }
+
+ion-slide {
+  padding-bottom: 44px; }
+
+.zoom-pane {
+  width: 100%;
+  height: 100%; }
+
+.zoom-pane .scroll {
+  min-height: 100%;
+  /* Vertical align */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.zoom-pane img {
+  width: 100%;
+  vertical-align: middle; }
 
 @media only screen and (min-device-width: 767px) {
   .homeButtons button p {

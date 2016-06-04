@@ -41,30 +41,39 @@
 .icon-wine:before {
   content: "\61";
 }
-.icon-vineyard:before {
+.icon-rose:before {
+  content: "\6c";
+}
+.icon-red:before {
+  content: "\6d";
+}
+.icon-white:before {
   content: "\62";
 }
-.icon-pos:before {
+.icon-vineyard:before {
   content: "\63";
 }
-.icon-history:before {
+.icon-pos:before {
   content: "\64";
 }
-.icon-location:before {
+.icon-lago:before {
   content: "\65";
 }
-.icon-media:before {
+.icon-history:before {
   content: "\66";
 }
 .icon-region:before {
   content: "\67";
 }
-.icon-rose:before {
+.icon-portal:before {
+  content: "\68";
+}
+.icon-quinta:before {
   content: "\69";
 }
-.icon-white:before {
+.icon-location:before {
   content: "\6a";
 }
-.icon-drink:before {
-  content: "\68";
+.icon-media:before {
+  content: "\6b";
 }

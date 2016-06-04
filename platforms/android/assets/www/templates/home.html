@@ -10,30 +10,30 @@
   </ion-nav-title>
   <ion-content padding="true" class="has-header" scroll="false">
 
-    <ion-slide-box does-continue="false" show-pager='true' slide-interval="5000" auto-play="true" on-slide-changed="slideChanged(index)">
+    <ion-slide-box does-continue="false" show-pager='true' slide-interval="5000" auto-play="true" >
       <ion-slide>
-        <div class="slide-container" style="background-image:url(img/homepage-story/enjoy-1.jpg);">
+        <div ui-sref="app.wines" class="slide-container" style="background-image:url(img/homepage-story/enjoy-1.jpg);">
           <h3>
             When I was in Amarante...
           </h3>
         </div>
       </ion-slide>
       <ion-slide>
-        <div class="slide-container" style="background-image:url(img/homepage-story/qdc-casa-1.jpg);">
+        <div ui-sref="app.history" class="slide-container" style="background-image:url(img/homepage-story/qdc-casa-1.jpg);">
           <h3>
             I stayed at Cal&#xE7;ada...
           </h3>
         </div>
       </ion-slide>
       <ion-slide>
-        <div class="slide-container" style="background-image:url(img/homepage-story/enjoy-wines.jpg);">
+        <div ui-sref="app.vineyards" class="slide-container" style="background-image:url(img/homepage-story/enjoy-wines.jpg);">
         <h3>
           We drank beautiful wines...
         </h3>
       </div>
       </ion-slide>
       <ion-slide>
-        <div class="slide-container" style="background-image:url(img/homepage-story/enjoy-grapes.jpg);">
+        <div ui-sref="app.regions" class="slide-container" style="background-image:url(img/homepage-story/enjoy-grapes.jpg);">
           <h3>
             and learned some history...
           </h3>
@@ -51,24 +51,29 @@
 
         <p>HISTORY</p>
       </button>
-      <button ui-sref="app.vineyards" id="home-vineyard" class="button">
+      <button ui-sref="app.regions" id="home-regions" class="button">
+        <i class="icon-location"></i>
+        <p>REGION</p>
+      </button>
+      <button ui-sref="app.varetals" id="home-varetals" class="button">
         <i class="icon-vineyard"></i>
+
+        <p>VERITALS</p>
+      </button>
+      <button ui-sref="app.vineyards" id="home-vineyard" class="button">
+        <i class="icon-region"></i>
 
         <p>VINEYARDS</p>
       </button>
-      <button ui-sref="app.regions" id="home-regions" class="button">
-        <i class="icon-region"></i>
-        <p>REGIONS</p>
-      </button>
       <button ui-sref="app.pos" id="home-pos" class="button">
         <i class="icon-pos"></i>
-        <p>POINT<br />OF SALE</p>
+        <p>POS<br />& PRESS KIT</p>
       </button>
-      <button href="#" onclick="window.open('http://www.internationalvines.net/wp-content/uploads/2015/10/Calçada-Press-Kit-US.pdf', '_system', 'location=yes'); return false;" id="home-pressKit" class="button">
+      <!--button href="#" onclick="window.open('http://www.internationalvines.net/wp-content/uploads/2015/10/Calçada-Press-Kit-US.pdf', '_system', 'location=yes'); return false;" id="home-pressKit" class="button">
         <i class="icon-media"></i>
 
         <p>PRESS KIT</p>
-      </button>
+      </button-->
     </div>
   </ion-content>
 </ion-view>

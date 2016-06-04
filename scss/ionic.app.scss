@@ -451,11 +451,13 @@ a.sound i {
     z-index: 10;
     position: relative;
   }
-  p {
-    padding-top: 250px;
+  img {
+    padding-top: 20px;
   }
 }
+.slide-view-height {height:89%;}
 //white
+/*
 #alvarinho {
   background-image: url('../img/wines-story-img/alvarihno-grape.png');
 }
@@ -487,7 +489,7 @@ a.sound i {
 }
 #barroca {
   background-image: url('../img/wines-story-img/tinta-barroca-grape.png');
-}
+} */
 
 #varetals {
   .divider {
@@ -498,9 +500,7 @@ a.sound i {
     }
 }
 // ---------------------------- Sliding Tabs ---------------------------------//
-.slider {
-  height: 100vh;
-}
+
 .slidingTabs {
   height: 48px;
   z-index: 10;
@@ -586,6 +586,7 @@ a.sound i {
 ion-slide {
   padding-bottom: 44px;
 }
+
 // ---------------------------- Slide Box ---------------------------------//
 .zoom-pane {
   width: 100%;
