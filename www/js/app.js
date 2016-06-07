@@ -24,7 +24,7 @@ var app = angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers'
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
-    .state('app', {
+  .state('app', {
     url: '/app',
     abstract: true,
     templateUrl: 'templates/menu.html',
@@ -55,35 +55,11 @@ var app = angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers'
     }
   })
 
-  .state('app.varetals', {
-    url: '/varetals',
+  .state('app.varietals', {
+    url: '/varietals',
     views: {
       'appContent': {
-        templateUrl: 'templates/varetals.html',
-      },
-      'menuLanguage': {
-        templateUrl: 'templates/usa.html'
-      }
-    }
-  })
-
-  .state('app.redVaretals', {
-    url: '/redVaretals',
-    views: {
-      'appContent': {
-        templateUrl: 'templates/redVaretals.html',
-      },
-      'menuLanguage': {
-        templateUrl: 'templates/usa.html'
-      }
-    }
-  })
-
-  .state('app.redVaretalsRos', {
-    url: '/redVaretalsRos',
-    views: {
-      'appContent': {
-        templateUrl: 'templates/redVaretalsRos.html',
+        templateUrl: 'templates/varietals.html',
       },
       'menuLanguage': {
         templateUrl: 'templates/usa.html'
@@ -175,17 +151,6 @@ var app = angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers'
     }
   })
 
-  .state('app.ourVineyards', {
-    url: '/ourVineyards',
-    views: {
-      'appContent': {
-        templateUrl: 'templates/ourVineyards.html',
-      },
-      'menuLanguage': {
-        templateUrl: 'templates/usa.html'
-      }
-    }
-  })
 
   // Portuguese Pages
 
