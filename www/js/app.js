@@ -151,6 +151,17 @@ var app = angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers'
     }
   })
 
+  .state('app.contact', {
+    url: '/contact',
+    views: {
+      'appContent': {
+        templateUrl: 'templates/contact.html',
+      },
+      'menuLanguage': {
+        templateUrl: 'templates/usa.html'
+      }
+    }
+  })
 
   // Portuguese Pages
 

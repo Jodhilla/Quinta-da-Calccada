@@ -9845,6 +9845,9 @@ button.button.button-icon.button-clear.ion-navicon {
 .bar-footer.bar-dark .button.button-clear {
   font-size: 10px; }
 
+.bar-footer.bar-dark .button.button-clear {
+  padding-top: 6px; }
+
 .bar .title {
   font-size: 15px;
   text-transform: uppercase; }
@@ -10134,8 +10137,8 @@ ion-slide {
     background-image: url("../img/wines-story-img/hanging-grapes.jpg");
     background-position: center center;
     background-size: cover; }
-  .homeButtons #home-varetals,
-  .wineButtons #home-varetals {
+  .homeButtons #home-varietals,
+  .wineButtons #home-varietals {
     background-image: url("../img/vineyards-story/up-close-vines.jpg");
     background-position: center center;
     background-size: cover; }
@@ -10301,6 +10304,12 @@ a.sound i {
 
 ion-slide {
   padding-bottom: 44px; }
+
+#wines li.slider-slide-tab.ng-binding {
+  width: 33.33333%; }
+
+#pos li.slider-slide-tab.ng-binding {
+  width: 50%; }
 
 .zoom-pane {
   width: 100%;

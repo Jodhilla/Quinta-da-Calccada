@@ -24,7 +24,7 @@ var app = angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers'
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
-    .state('app', {
+  .state('app', {
     url: '/app',
     abstract: true,
     templateUrl: 'templates/menu.html',
@@ -55,35 +55,11 @@ var app = angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers'
     }
   })
 
-  .state('app.varetals', {
-    url: '/varetals',
+  .state('app.varietals', {
+    url: '/varietals',
     views: {
       'appContent': {
-        templateUrl: 'templates/varetals.html',
-      },
-      'menuLanguage': {
-        templateUrl: 'templates/usa.html'
-      }
-    }
-  })
-
-  .state('app.redVaretals', {
-    url: '/redVaretals',
-    views: {
-      'appContent': {
-        templateUrl: 'templates/redVaretals.html',
-      },
-      'menuLanguage': {
-        templateUrl: 'templates/usa.html'
-      }
-    }
-  })
-
-  .state('app.redVaretalsRos', {
-    url: '/redVaretalsRos',
-    views: {
-      'appContent': {
-        templateUrl: 'templates/redVaretalsRos.html',
+        templateUrl: 'templates/varietals.html',
       },
       'menuLanguage': {
         templateUrl: 'templates/usa.html'
@@ -175,11 +151,11 @@ var app = angular.module('starter', ['ionic', 'ngCordova', 'starter.controllers'
     }
   })
 
-  .state('app.ourVineyards', {
-    url: '/ourVineyards',
+  .state('app.contact', {
+    url: '/contact',
     views: {
       'appContent': {
-        templateUrl: 'templates/ourVineyards.html',
+        templateUrl: 'templates/contact.html',
       },
       'menuLanguage': {
         templateUrl: 'templates/usa.html'
@@ -283,25 +259,7 @@ app.controller("MediaController", function($scope, $cordovaMedia, $ionicLoading)
 
 });
 
-app.controller('AppCtrl', function($scope, $state, $ionicSlideBoxDelegate, $ionicModal) {
 
-  // Called to navigate to the main app
-  $scope.startApp = function() {
-    $state.go('main');
-  };
-  $scope.next = function() {
-    $ionicSlideBoxDelegate.next();
-  };
-  $scope.previous = function() {
-    $ionicSlideBoxDelegate.previous();
-  };
-
-  // Called each time the slide changes
-  $scope.slideChanged = function(index) {
-    $scope.slideIndex = index;
-  };
-
-})
 
 app.controller('ImageZoom', function($scope, $ionicModal) {
 

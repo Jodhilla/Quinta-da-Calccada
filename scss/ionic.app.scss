@@ -65,6 +65,10 @@ button.button.button-icon.button-clear.ion-navicon {
 .bar-footer.bar-dark .button.button-clear {
   font-size: 10px;
 }
+.bar-footer.bar-dark .button.button-clear {
+    padding-top: 6px;
+  }
+
 // ---------------------------- Typography ---------------------------------//
 .bar {
   .title {
@@ -559,7 +563,7 @@ a.sound i {
 .slidingTabs .tab-indicator-wrapper .tab-indicator {
   height: 100%;
   background-color: $gold;
-  width: 70px;
+  width: 100px;
   position: relative;
 }
 .slide-content {
@@ -586,7 +590,18 @@ a.sound i {
 ion-slide {
   padding-bottom: 44px;
 }
+#wines {
+  li.slider-slide-tab.ng-binding, .tab-indicator {
+    width: 33.33333%!important;
+  }
+}
 
+#pos {
+  li.slider-slide-tab.ng-binding, .tab-indicator {
+} {
+    width: 50%!important;
+  }
+}
 // ---------------------------- Slide Box ---------------------------------//
 .zoom-pane {
   width: 100%;
@@ -628,6 +643,8 @@ ion-slide {
   width: 100%;
   vertical-align: middle;
 }
+
+
 // ---------------------------- Media Querys ---------------------------------//
 @media only screen and (min-device-width:767px) {
   .homeButtons {
