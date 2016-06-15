@@ -10278,7 +10278,7 @@ a.sound i {
 .slidingTabs .tab-indicator-wrapper .tab-indicator {
   height: 100%;
   background-color: #87764f;
-  width: 70px;
+  width: 100px;
   position: relative; }
 
 .slide-content {
@@ -10305,12 +10305,18 @@ a.sound i {
 ion-slide {
   padding-bottom: 44px; }
 
-#wines li.slider-slide-tab.ng-binding {
-  width: 33.33333%; }
+/*#wines {
+  li.slider-slide-tab.ng-binding, .tab-indicator {
+    width: 33.33333%!important;
+  }
+}
 
-#pos li.slider-slide-tab.ng-binding {
-  width: 50%; }
-
+#pos {
+  li.slider-slide-tab.ng-binding, .tab-indicator {
+} {
+    width: 50%!important;
+  }
+}*/
 .zoom-pane {
   width: 100%;
   height: 100%; }

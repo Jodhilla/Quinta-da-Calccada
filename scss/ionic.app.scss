@@ -214,6 +214,11 @@ svg {
     font-size: 20px;
   }
 }
+
+i.ion-iphone.larger:before {
+    font-size: 26px;
+    margin: 0 3px 0 5px;
+}
 // ---------------------------- Sliders ---------------------------------//
 .slider-pager {
   top: 20px !important;
